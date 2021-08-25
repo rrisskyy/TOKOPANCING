@@ -1,0 +1,3 @@
+C:\Program Files\MongoDB\Server\4.4\data\
+
+C:\Program Files\MongoDB\Server\4.4\log\

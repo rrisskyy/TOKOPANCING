@@ -1,0 +1,23 @@
+
+
+<%- include('partials/header.ejs') %>
+<h1>Home</h1>
+
+<p><%= homeContent %></p>
+
+
+
+
+    <% logContent.forEach( (post) => { %>
+        <h1> <%= post.title %> </h1>
+        <% title = post.title.replace(" ", '-') %> 
+        <p>
+            <%= post.content.substring(0,100) + ' ...' %> 
+            <a href="posts/<%= title %>"" class="anchor">Read More</a> 
+        </p>
+    <% }); %>
+
+
+
+
+<%- include('partials/footer.ejs') %>

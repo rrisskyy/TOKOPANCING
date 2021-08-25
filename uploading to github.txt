@@ -1,0 +1,89 @@
+
+LOKAL REPOSITORY
+
+1. buat file	
+2. git init
+3. ls -a (cek bahwa git sudah di inisiasi)
+4. git status (cek file yang mana yang sudah didalam staging area, jika belum warnanya merah)
+5. git add . (tambahkan semua file ke staging area)
+6. git commit -m "message"
+7. git log (cek history commit) 
+
+
+	Hiding File
+	1. make .gitignore
+	2. write file which you want to hide inside .gitignore
+
+
+	Revert previous version
+	1. git diff chapter1.txt (untuk cek perubahan apa yang berubah)
+	2. git checkout chapter1.txt (kembalikan)
+
+
+	Deleting all from Staging area
+	1. git rm --cached -r .
+
+
+	Creating New Branch
+	1. git branch [branch_name]
+	2. git branch (checking branch which * means active branch)
+	
+	
+	Switching Branch
+	1. git checkout [branch_name]
+
+	
+	Merging Branch 
+	1. git branch master (back to main branch)
+	2. git merge [another_branch_name]
+		
+		Want Make New Branch then merge it to same folder?
+			1. Make New Branch
+			2. Write Code in the new Branch
+			3. Merge it
+			4. git log then merge it
+			5. push it to remote repository
+
+
+
+
+
+
+REMOTE REPOSITORY
+
+1. cd ke folder
+2. git log untuk cek riwayat commit(opsional)
+3. git remote add origin ke url repo (https://github.com/rrisskyy/Story.git)
+4. git push -u origin master
+
+
+	Clone Repository
+	1. copy url
+	2. git clone [url]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#rrisskyy
+

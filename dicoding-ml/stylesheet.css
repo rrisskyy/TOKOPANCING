@@ -1,0 +1,125 @@
+/* Reset CSS (JANGAN DIHAPUS) */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lucida Grande";
+  text-align:center;
+  
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color:white;
+}
+
+.clear{
+    clear:both;
+}
+/* Ketik code Anda dibawah */
+.top-wrapper header{
+  padding: 0 15px;
+  height:65px;
+  background-color:rgba(34, 49, 52, 0.9);
+  width:100%;
+  position:fixed;
+}
+
+.top-wrapper .header-left img{
+  width:124px;
+  padding:20px 0;
+  float:left;
+}
+.top-wrapper .header-right{
+  text-align:center;
+  padding: 23px 25px;
+  margin:auto;
+  background-color:rgba(255, 255, 255, 0.3);
+  display:inline-block;
+  position:absolute;
+  right:70px;
+}
+
+.top-wrapper{
+  background-image:url("https://prog-8.com/images/html/advanced/top_en.png");
+  background-size:cover;
+  color:white;
+}
+.container{
+ padding:180px 15px 100px 15px; 
+}
+.container h1{
+  font-size:45px;
+  opacity:.7;
+  letter-spacing:5px;
+  padding-bottom:10px;
+}
+.container .caption{
+  opacity:.7;
+  padding:3px 0 20px;
+}
+.container p{
+  opacity:.7;
+}
+.btn{
+  background-color:red;
+  padding:12px 24px;
+  display:inline-block;
+  border-radius:3px;
+}
+.gap{
+  padding:10px 0;
+}
+.gap5px{
+  padding-right:5px;
+}
+.email{
+  background-color:#239b76;
+  opacity:0.8;
+}
+.facebook{
+  margin-right:10px;
+  background-color:#3b5998;
+  opacity:0.8;
+}
+.twitter{
+  background-color:#55acee;
+  opacity:0.8;
+}
+
+
+.middle-wrapper{
+ width:100%;
+ background-color:#f7f7f7; 
+}
+
+.middle-wrapper h2{
+  font-weight:normal;
+  padding:60px 0 10px;
+  color:#5f5d60;
+}
+
+
+
+.text-logo{
+  /*color:white;*/
+  position:relative;
+  /*top:110px;*/
+  /*z-index:10;*/
+}
+.course{
+  display:inline-block;
+  margin:auto;
+  width:25%;
+}
+.course img{
+  position:relative;
+}

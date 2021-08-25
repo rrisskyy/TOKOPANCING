@@ -1,0 +1,130 @@
+body{-webkit-user-select:none;
+    -moz-user-select:-moz-none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+
+
+.mt-24{
+    margin-top: 240px;
+}
+
+/* ========================================================================================================== */
+.fish{
+    z-index: 10;
+    height: 35px;
+}
+
+.vl {
+    border-left: 1px solid darkgrey;
+    height: 30px;
+    position: absolute;
+    left: 85px;
+    margin-left: -3px;
+    top: 22px;
+}
+.navbar-brand-text{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    letter-spacing: 2px;
+    cursor: default;
+    color: rgb(68, 28, 28);
+}
+.pancing{
+    display: inline-block;
+    padding-top: 50px;
+}
+.search{
+    width: 300px;
+    border-radius: 20px;
+}
+
+/* ========================================================================================================== */
+
+.top-container{
+    padding-top: 70px;    
+    background-image: url("../image/bg.svg");
+}
+.top-container h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 90px;
+    letter-spacing: 5px;
+    padding: 100px 0 0 0;
+}
+.top-container h5{  
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    margin-top:-20px;
+    margin-left: 0px;
+}
+.company-card{
+    margin: 100px 0 140px;
+    height: 200px;
+    width: 500px;
+    background-image: url("../image/pattern-randomized.svg");
+    background-size: cover;
+    border-radius: 7px;
+    box-shadow: 0px 40px 20px 0px rgba(0,0,0,0.2);
+    border: 2.5px solid blue;
+}
+.fa-bookmark {
+    position: absolute;
+    
+    font-size: 50px;
+    
+}
+.company-card .company-desc{
+    padding: 20px;
+}
+.company-card .company-logo{
+    background-image: url("../image/r.png");
+    background-size: cover;
+    border: 2px solid blue;
+    height: 80px;
+    width: 80px;
+    margin: 30px 30px 40px 20px;
+    border-radius: 100%;
+}
+.company-card li{
+    text-decoration: none;
+    display: inline-block;
+}
+.company-card .company-name h6{
+    font-size: 20px;
+}
+.company-card .btn{
+    width: 200px;
+    position: relative;
+    margin-left: -10px;
+    margin-right: 15px;
+}
+.small{
+    font-size: 14px;
+}
+.clear{
+    clear: both;
+}
+/* ================================================================================================= */
+
+.middle-container{
+    background-image: url("../image/shiny.svg");
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    height: 1000px;
+}
+
+@media only screen and (max-width: 600px) {
+    .top-container h1{
+        font-size: 70px;
+        letter-spacing: 5px;
+        padding: 50px 0 0 20px;
+    }
+    .top-container h5{  
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 2px;
+        margin-top:-10px;
+        padding: 0 0 0 20px;
+    }
+  }
+  

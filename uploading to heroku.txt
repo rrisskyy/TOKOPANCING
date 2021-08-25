@@ -1,0 +1,28 @@
+CREATE
+
+1. process.env.PORT || 3000
+
+
+2. Procfile
+	web: node app.js
+
+
+3. git init
+4. git add .
+5. git commit -m "pesan"
+
+
+6. heroku create 
+
+
+7. git push heroku master
+
+
+8. heroku logs
+
+
+UPDATE
+
+1. git add .
+2. git commit -m "pesan"
+3. git push heroku master

@@ -1,0 +1,13 @@
+1. Masuk Ke Env
+\Env\Scripts\activate.bat
+2. Keluar dan Buat Project
+cd .. 
+cd ..
+django-admin startproject mywebsite
+cd mywebsite
+
+3. Startapp
+python manage.py startapp blog
+
+4. Runserver
+manage.py runserver
