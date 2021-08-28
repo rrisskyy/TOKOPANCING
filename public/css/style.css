@@ -1,0 +1,338 @@
+.top-container, .navbar{-webkit-user-select:none;
+    -moz-user-select:-moz-none;
+    -ms-user-select:none;
+    user-select:none;
+}
+/* ========================================================================================================== */
+.fish{
+    z-index: 10;
+    height: 35px;
+}
+
+.vl {
+    border-left: 1px solid darkgrey;
+    height: 30px;
+    position: absolute;
+    left: 85px;
+    margin-left: -3px;
+    top: 22px;
+}
+.navbar-brand-text{
+    font-family: 'Kaushan Script';
+    font-size: 30px;
+    letter-spacing: 2px;
+    cursor: default;
+    color: rgb(68, 28, 28);
+}
+.pancing{
+    display: inline-block;
+}
+.search{
+    width: 300px;
+    border-radius: 20px;
+}
+
+/* ========================================================================================================== */
+
+.top-container{
+    padding-top: 70px;    
+    background-image: url("../image/bg.svg");
+}
+.top-container h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 90px;
+    letter-spacing: 4px;
+    padding: 100px 0 0 0;
+}
+.top-container h5{  
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    margin-top:-20px;
+    margin-left: 0px;
+}
+.company-card-container{
+    width: 500px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: white;
+    /* background-image: url("../image/pattern-randomized.svg"); */
+    /* background-size: cover; */
+    position: relative;
+    overflow: hidden;
+    transition: all .4s ease-in-out;
+}
+.company-card-container:hover{
+    transform: scale(1.04);
+    box-shadow: -1px 5px 7px 1.5px rgba(137,131,131,0.75);
+    -webkit-box-shadow: -1px 5px 7px 1.5px rgba(137,131,131,0.75);
+    -moz-box-shadow: -1px 5px 7px 1.5px rgba(137,131,131,0.75);
+}
+.company-card-left{
+    height: 100%;
+    width: 30%; 
+    background-image: url("../image/ss.png");
+    background-size: cover;
+}
+.company-card-right{
+    /* padding: 20px; */
+    width: 70%;
+    height: 100%;
+}
+
+.company-card-right .company-name h6{
+    font-weight: bold;
+    font-size: 20px;    
+}
+
+.company-card-right ul{
+    padding-top: 20px;
+    margin-left: -25px;
+}
+.company-card-right li{
+    text-decoration: none;
+    display: inline-block;
+}
+.company-top{
+    padding: 20px;
+}
+.company-bottom{
+    height: 100%;
+    padding: 30px;
+}
+.company-bottom .btn{
+    position: relative; 
+    margin-left: -10px;
+    margin-right: 15px;
+}
+.small{
+    font-size: 14px;
+}
+.clear{
+    clear: both;
+}
+/* ================================================================================================= */
+
+.middle-container{
+    background-image: url("../image/shiny.svg");
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    height: 1000px;
+}
+
+
+.best{
+    font-size: 70px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    color: gold;
+    display: block;
+    margin: 70px 70px 0 70px;
+    text-align: center;
+}
+.rekomen{
+    padding-top: 40px;
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    color: gold;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+.comment-header{
+    padding-top: 70px;
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    color: gold;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+/* Card */
+.card{
+    background-color: white;
+    border-radius:10px;
+    width: 300px;
+    height: 500px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+    transition: all .4s ease-in-out;
+    margin: 30px auto 50px auto;
+}
+
+.crown{
+    color: gold;
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    font-size: 70px;
+}
+.crown:hover{
+    transform: scale(1.04);
+    transform: translateY(3px);
+}
+.card:hover{
+    transform: scale(1.04);
+    box-shadow: -1px 5px 7px 1.5px rgba(137,131,131,0.75);
+    -webkit-box-shadow: -1px 5px 7px 1.5px rgba(137,131,131,0.75);
+    -moz-box-shadow: -1px 5px 7px 1.5px rgba(137,131,131,0.75);
+}
+
+.card-container{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+}
+.top{
+    height: 80%;
+    width: 100%;
+    background-image: url("../image/ss.png");
+    background-size: cover;
+}
+.bottom{
+    height: 20%;
+    width: 100%;
+}
+.details{
+    padding: 20px;
+    height: 100%;
+    float:left;
+    width: calc(80% - 40px);
+}
+.buy {
+    height: 100%;
+    float:right;
+    width: calc(30% - 2px);
+    border-left: solid thin rgba(0,0,0,0.1);
+    font-size: 25px;
+    padding: 32px 32px 32px 27px;
+    /* margin-right: 4%; */
+}
+.buy:hover{
+    background-color: rgb(231, 231, 231);
+}
+.cart{
+    transition: all .4s;
+}
+.buy:hover .cart{
+    transform: translateY(3px);
+}
+
+/* End Card */
+
+/* Comment */
+.comment {
+    width: 90%;
+    height: 400px;
+    margin: auto;
+}
+.costumers-pic {
+    border-radius: 50%;
+    height: 25%;
+}
+/* End Comment */
+.my-container{
+    font-family: 'Montserrat', sans-serif;
+    width: 350px;
+    background-color: #28223F;
+    color: white;
+    margin: auto;
+    border-radius: 5px;
+    color: #B3B8CD;
+    font-weight: bold;
+}
+.my-container img{
+    width: 145px;
+    border-radius: 50%;
+    border: 1px solid #03BFCB;
+    border-radius: 50%;
+    padding: 7px;
+}
+.noob {
+    margin: 30px;
+    font-weight: bold;
+    background-color: #FEBB0B;
+    color: #28223F;
+    font-size: 17px;
+    padding: 4px 8px;
+    float: left;
+    border-radius: 3px;
+}
+.btn-call {
+    font-size: 16px;
+    padding: 10px 25px;
+    margin: 10px 0 0 0;
+}
+.skills {
+    padding: 15px;
+    margin-top: 30px;
+    background-color: #1F1A36;
+	text-align: left;
+}
+.skills p{
+    font-size: 12px;
+    text-align: left;
+    padding-left: 20px;
+}
+footer{
+    font-size: 14px;
+    height: 300px;
+    width: 100%;
+}
+.footer-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+}
+
+footer li{
+    text-decoration: none;
+    display: inline-block;
+    padding-right: 100px; 
+}
+
+
+
+
+
+@media only screen and (min-width: 992px) {
+    .mt-20{
+        margin-top: 200px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .top-container{
+        padding-top: 5px;    
+    }
+
+    .top-container h1{
+        font-size: 70px;
+    }
+    .top-container h5{
+        margin-top:-10px;
+        margin-left: 0px;
+    }
+    .company-card-container{
+        height: 200px;
+        width: 422px;
+        margin: 10px auto 0 auto;
+    }
+    .container-symbol{
+        margin: -70px 0 50px 0;
+    }
+    .costumers-pic {
+        border-radius: 50%;
+        height: 25%;
+    }
+  }
+@media only screen and (max-width: 522px) {
+    .top-container h1{
+        font-size: 65px;
+    }
+}
