@@ -221,3 +221,16 @@ footer a {
     color: #3c97bf;
     text-decoration: none;
 }
+
+
+@media only screen and (max-width: 600px) {
+	.overlay-container{
+		display: none;
+	}
+	.sign-in-container {
+		width: 100%;
+	}
+	.container{
+		padding:0 200px;
+	}
+}
