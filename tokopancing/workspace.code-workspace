@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\..\\xampp\\htdocs\\phpmvc\\TOKOPANCING"
+		},
+		{
+			"path": "node_modules"
+		},
+		{
+			"path": "public"
+		},
+		{
+			"path": "views"
+		}
+	],
+	"settings": {}
+}
