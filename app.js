@@ -15,6 +15,10 @@ app.get("/", (req, res) => {
 app.get("/login", (req, res) => {
     res.render("login")
 })
+app.get("/all", (req, res) => {
+    allItems = ["Charm", "Carbon", "Captain", "Daido", "JHook", "Kaizen", "Hemus", "Bamboo"]
+    res.render("all", {items: allItems})
+})
 
 app.listen(3000, () => {
     console.log("Server start at port 3000");

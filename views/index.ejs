@@ -1,66 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toko Alat Pancing</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/style.css">
-
-</head>
-<body>
-<!-- Navbar -->
-    <nav class="navbar navbar-light navbar-expand-xl bg-light fixed-top">
-        <div class="container-fluid">
-          <a class="ps-3 pe-3 navbar-brand" href="#"><img src="../public/image/fish.png" alt="" class="fish"><span class="vl"></span></a>
-          <h2 class="navbar-brand-text text-warning">Toko <span class="pt-2 ps-2 text-info pancing">Pancing</span></h2>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><h2 class="navbar-brand-text text-warning">Toko <span class="pt-3 ps-2 text-info">Pancing</span></h2></h5>
-              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item pe-3">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item pe-3">
-                  <a class="nav-link" href="https://goo.gl/maps/LiAjooGvsMRYEFHSA" target="_blank">Lokasi</a>
-                </li>
-                <li class="nav-item pe-3">
-                  <a class="nav-link" href="" title="Pemberitahuan" data-bs-content="Mohon Maaf Fitur Belum Tersedia Saat ini">Hubungi Kami</a>
-                </li>
-                <li class="nav-item pe-3">
-                  <a class="nav-link" href="" title="Pemberitahuan" data-bs-content="Mohon Maaf Fitur Belum Tersedia Saat ini"><i class="fas fa-shopping-cart text-warning"></i></a>
-                </li>
-                <li class="nav-item pe-3">
-                  <a class="nav-link" href="/login"><i class="fas fa-sign-in-alt text-warning"></i></a>
-                </li>
-
-              </ul>
-              <form class="d-flex">
-                <input class="form-control search me-1" type="search" placeholder="Cari di toko ini..." aria-label="Search">
-                <button class="btn" type="submit"><i class="fas fa-search text-warning"></i></button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </nav>
-<!-- End Navbar -->
-
+<%-include("partials/header.ejs")-%>
 
 <!-- Top Container -->
 <div class="top-container">
@@ -162,6 +100,7 @@
         </div>
       <!-- End row 1 -->
 
+      <!-- card -->
 <div class="container">
   
   <div id="bestseller" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -295,37 +234,4 @@
   </div>
   
 </div>
-<footer class="bg-light">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <div class="footer-left">
-          <div class="w-10">
-            <h2 class="navbar-brand-text text-warning pt-5">Toko <span class="pt-2 ps-2 text-info pancing">Pancing</span></h2>
-            <p class="text-black-50 pt-3"><span class="d-block">Toko Alat Pancing</span> <span class="d-block">Jl. Ulin No.68, Sebulu Ulu, <span class="d-block">Kec. Sebulu, Kab. Kutai Kartanegara</span>  Kalimantan Timur 75552</p>
-            <p class="text-black-50 pt-4 pb-4">&copy 2021 Risky Kurniawan</p>  
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="footer-right fs-1">
-          <div class="row">
-            <div class="col pe-5"><i class="fab fa-whatsapp"></i></div>
-            <div class="col pe-5"><i class="fab fa-instagram"></i></div>
-            <div class="col pe-5"><i class="fab fa-twitter"></i></div>
-            <div class="col pe-5"><i class="fab fa-facebook-f"></i></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-  
-</footer>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-</body>
-</html>
+<%-include("partials/footer.ejs")-%>
