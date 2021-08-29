@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
 </head>
 <body>
@@ -47,7 +47,7 @@
                   <a class="nav-link" href="" title="Pemberitahuan" data-bs-content="Mohon Maaf Fitur Belum Tersedia Saat ini"><i class="fas fa-shopping-cart text-warning"></i></a>
                 </li>
                 <li class="nav-item pe-3">
-                  <a class="nav-link" href="login.html"><i class="fas fa-sign-in-alt text-warning"></i></a>
+                  <a class="nav-link" href="/login"><i class="fas fa-sign-in-alt text-warning"></i></a>
                 </li>
 
               </ul>
@@ -162,90 +162,32 @@
         </div>
       <!-- End row 1 -->
 
-      <!-- Row 2 -->
-      <!-- <div class="row">
-        <div class="col">
-          <div class="card">
-            <div class="card-container">
-              <div class="top"></div>
-                <div class="bottom">
-                  <div class="left">
-                    <div class="details">
-                      <h2>Charm</h2>
-                      <p>Rp. 7000</p>
-                    </div>
-                    <div class="buy">
-                      <i class="fas fa-cart-plus cart"></i>
-                    </div>
-                  </div>
-                  <div class="right"></div>
-                </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <div class="card-container">
-              <div class="top"></div>
-                <div class="bottom">
-                  <div class="left">
-                    <div class="details">
-                      <h2>Charm</h2>
-                      <p>Rp. 7000</p>
-                    </div>
-                    <div class="buy">
-                      <i class="fas fa-cart-plus cart"></i>
-                    </div>
-                  </div>
-                  <div class="right"></div>
-                </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <div class="card-container">
-              <div class="top"></div>
-                <div class="bottom">
-                  <div class="left">
-                    <div class="details">
-                      <h2>Charm</h2>
-                      <p>Rp. 7000</p>
-                    </div>
-                    <div class="buy">
-                      <i class="fas fa-cart-plus cart"></i>
-                    </div>
-                  </div>
-                  <div class="right"></div>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-    <!-- End Row 2 -->
-
 <div class="container">
   
   <div id="bestseller" class="carousel carousel-dark slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#bestseller" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#bestseller" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#bestseller" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#bestseller" data-bs-slide-to="3" aria-label="Slide 4"></button>
-      <button type="button" data-bs-target="#bestseller" data-bs-slide-to="4" aria-label="Slide 5"></button>
-      <button type="button" data-bs-target="#bestseller" data-bs-slide-to="5" aria-label="Slide 6"></button>
-      <button type="button" data-bs-target="#bestseller" data-bs-slide-to="6" aria-label="Slide 7"></button>
+      <button type="button" data-bs-target="#bestseller" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button> 
+      <% for( let i = 1; i < myHook.length; i++ ) { %>
+        <button type="button" data-bs-target="#bestseller" data-bs-slide-to="<%= i %>" aria-current="true" aria-label="Slide <%= i+1 %> "></button> 
+      <% } %>
+      
+
     </div>
     <div class="carousel-inner bg-light">
       <h2 class="rekomen">Rekomendasi</h2>
-      <div class="carousel-item active">
+      <% for( let i = 0; i < myHook.length; i++ ) { %>
+      <% if (i == 0) { %>
+        <div class="carousel-item active"> 
+      <% } else { %>
+        <div class="carousel-item">
+      <% } %> 
         <div class="card">
           <div class="card-container">
             <div class="top"></div>
               <div class="bottom">
                 <div class="left">
                   <div class="details">
-                    <h2>Charm</h2>
+                    <h2><%= myHook[i] %></h2>
                     <p>Rp. 7000</p>
                   </div>
                   <div class="buy">
@@ -257,120 +199,7 @@
           </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <div class="card">
-          <div class="card-container">
-            <div class="top"></div>
-              <div class="bottom">
-                <div class="left">
-                  <div class="details">
-                    <h2>Charm</h2>
-                    <p>Rp. 7000</p>
-                  </div>
-                  <div class="buy">
-                    <i class="fas fa-cart-plus cart"></i>
-                  </div>
-                </div>
-                <div class="right"></div>
-              </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="card">
-          <div class="card-container">
-            <div class="top"></div>
-              <div class="bottom">
-                <div class="left">
-                  <div class="details">
-                    <h2>Charm</h2>
-                    <p>Rp. 7000</p>
-                  </div>
-                  <div class="buy">
-                    <i class="fas fa-cart-plus cart"></i>
-                  </div>
-                </div>
-                <div class="right"></div>
-              </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="card">
-          <div class="card-container">
-            <div class="top"></div>
-              <div class="bottom">
-                <div class="left">
-                  <div class="details">
-                    <h2>Charm</h2>
-                    <p>Rp. 7000</p>
-                  </div>
-                  <div class="buy">
-                    <i class="fas fa-cart-plus cart"></i>
-                  </div>
-                </div>
-                <div class="right"></div>
-              </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="card">
-          <div class="card-container">
-            <div class="top"></div>
-              <div class="bottom">
-                <div class="left">
-                  <div class="details">
-                    <h2>Charm</h2>
-                    <p>Rp. 7000</p>
-                  </div>
-                  <div class="buy">
-                    <i class="fas fa-cart-plus cart"></i>
-                  </div>
-                </div>
-                <div class="right"></div>
-              </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="card">
-          <div class="card-container">
-            <div class="top"></div>
-              <div class="bottom">
-                <div class="left">
-                  <div class="details">
-                    <h2>Charm</h2>
-                    <p>Rp. 7000</p>
-                  </div>
-                  <div class="buy">
-                    <i class="fas fa-cart-plus cart"></i>
-                  </div>
-                </div>
-                <div class="right"></div>
-              </div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <div class="card">
-          <div class="card-container">
-            <div class="top"></div>
-              <div class="bottom">
-                <div class="left">
-                  <div class="details">
-                    <h2>Charm</h2>
-                    <p>Rp. 7000</p>
-                  </div>
-                  <div class="buy">
-                    <i class="fas fa-cart-plus cart"></i>
-                  </div>
-                </div>
-                <div class="right"></div>
-              </div>
-          </div>
-        </div>
-      </div>
+      <% } %>
     </div>
     
     <button class="carousel-control-prev" type="button" data-bs-target="#bestseller" data-bs-slide="prev">
@@ -393,7 +222,7 @@
           <div class="col">
             
             <div class="comment text-center w-50 pt-5">
-              <img src="../public/image/ss.png" class="rounded-circle w-25" alt="">
+              <img src="image/ss.png" class="rounded-circle w-25" alt="">
               <p class="costumer-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ad inventore adipisci ipsum repellendus fuga atque, laudantium vero ipsa illum praesentium itaque maiores, minima quidem possimus! Corporis molestias pariatur ab.</p>
               <p class="pt-3 text-secondary">Yuno</p>
             </div>
@@ -405,7 +234,7 @@
           <div class="col">
             
             <div class="comment text-center w-50 pt-5">
-              <img src="../public/image/ss.png" class="rounded-circle w-25" alt="">
+              <img src="image/ss.png" class="rounded-circle w-25" alt="">
               <p class="costumer-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ad inventore adipisci ipsum repellendus fuga atque, laudantium vero ipsa illum praesentium itaque maiores, minima quidem possimus! Corporis molestias pariatur ab.</p>
               <p class="pt-3 text-secondary">Sasuke</p>
             </div>
@@ -417,7 +246,7 @@
           <div class="col">
             
             <div class="comment text-center w-50 pt-5">
-              <img src="../public/image/ss.png" class="rounded-circle w-25" alt="">
+              <img src="image/ss.png" class="rounded-circle w-25" alt="">
               <p class="costumer-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ad inventore adipisci ipsum repellendus fuga atque, laudantium vero ipsa illum praesentium itaque maiores, minima quidem possimus! Corporis molestias pariatur ab.</p>
               <p class="pt-3 text-secondary">Ichigo</p>
             </div>
@@ -445,7 +274,7 @@
     <span class="noob">new</span>
     <div class="clear"></div>
     <div class="image">
-      <img src="../public/image/risky.jpg" alt="" class="rounded-circle">
+      <img src="image/risky.jpg" alt="" class="rounded-circle">
     </div>
     <h3 class="fw-bold">Risky Kurniawan</h3>
     <h6 class="fw-bold">Kutai Kartanegara</h6>
@@ -459,7 +288,7 @@
         <button class="btn btn-outline-light small rounded-0 mt-2 me-1">HTML</button>
         <button class="btn btn-outline-light small rounded-0 mt-2 me-1">CSS</button>
         <button class="btn btn-outline-light small rounded-0 mt-2 me-1">JavaScript</button>
-        <button class="btn btn-outline-light small rounded-0 mt-2 me-1">React</button>
+        <button class="btn btn-outline-light small rounded-0 mt-2 me-1">PHP</button>
         <button class="btn btn-outline-light small rounded-0 mt-2 me-1">Node</button>
       </ul>
     </div>
