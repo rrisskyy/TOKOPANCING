@@ -2,40 +2,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const https = require('https');
 const mongoose = require('mongoose');
-const multer = require('multer');
 
-
-var fs = require('fs');
-var path = require('path');
-require('dotenv/config');
-
-mongoose.connect('mongodb://localhost:27017/itemsDB', {useNewUrlParser: true, useUnifiedTopology: true});
-
-
-// const imageSchema = new mongoose.Schema({
-//     name: String,
-//     desc: String,
-//     img:
-//     {
-//         data: Buffer,
-//         contentType: String
-//     }
-// });
-// module.exports = new mongoose.model('Image', imageSchema);
- 
-
-// let storage = multer.diskStorage({
-//     destination: (req, file, cb) => {
-//         cb(null, 'uploads')
-//     },
-//     filename: (req, file, cb) => {
-//         cb(null, file.fieldname + '-' + Date.now())
-//     }
-// });
- 
-// let upload = multer({ storage: storage });
-
-// const imgModel = require('./model');
+mongoose.connect('mongodb://localhost:27017/itemsDB', {useNewUrlParser: true});
 
 const itemSchema = new mongoose.Schema ({
     name: {
@@ -55,11 +23,11 @@ const itemSchema = new mongoose.Schema ({
 });
 
 const Item = mongoose.model("Item", itemSchema);
-    
+
 const app = express();
+app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
-app.set('view engine', 'ejs');
 
 app.get("/", (req, res) => {
     
@@ -80,6 +48,6 @@ app.get("/all", (req, res) => {
     res.render("all", {items: allItems, category:allCategories})
 })
 
-
-const port = process.env.PORT || 8080;
-app.listen(port, console.log("Server start at port 3000"));
+app.listen(3000, () => {
+    console.log("Server start at port 3000");
+})
