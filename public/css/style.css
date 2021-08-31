@@ -1,13 +1,11 @@
 * {
-	box-sizing: border-box;
+	box-sizing: border-box; 
 }
 
-.top-container, .navbar{-webkit-user-select:none;
-    -moz-user-select:-moz-none;
-    -ms-user-select:none;
-    user-select:none;
-}
-/* ========================================================================================================== */
+
+
+/* Navbar */
+
 .fish{
     z-index: 10;
     height: 35px;
@@ -36,10 +34,17 @@
     border-radius: 20px;
 }
 
-/* ========================================================================================================== */
+/* END Navbar */
 
+
+/* Top Container */
+.top-container, .navbar{-webkit-user-select:none;
+    -moz-user-select:-moz-none;
+    -ms-user-select:none;
+    user-select:none;
+}
 .top-container{
-    padding-top: 70px;    
+    margin: 100px 0 10px 0;
     background-image: url("../image/bg.svg");
 }
 .top-container h1{
@@ -59,8 +64,6 @@
     height: 200px;
     border-radius: 10px;
     background-color: white;
-    /* background-image: url("../image/pattern-randomized.svg"); */
-    /* background-size: cover; */
     position: relative;
     overflow: hidden;
     transition: all .4s ease-in-out;
@@ -78,7 +81,6 @@
     background-size: cover;
 }
 .company-card-right{
-    /* padding: 20px; */
     width: 70%;
     height: 100%;
 }
@@ -114,23 +116,23 @@
 .clear{
     clear: both;
 }
-/* ================================================================================================= */
 
+/* END Top Container */
+
+/* Middle Container */
 .middle-container{
     background-image: url("../image/shiny.svg");
     background-size: cover;
     /* background-repeat: no-repeat; */
     height: 1000px;
 }
-
-
 .best{
     font-size: 70px;
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 1px;
     color: gold;
     display: block;
-    margin: 70px 70px 0 70px;
+    margin: 50px 70px 0 70px;
     text-align: center;
 }
 .rekomen{
@@ -156,7 +158,9 @@
     margin: auto;
 }
 /* Card */
-
+.show{
+    display: none;
+}
 .card{
     background-color: white;
     border-radius:10px;
@@ -169,10 +173,6 @@
     margin: 30px auto 50px auto;
 }
 
-.small-card {
-    width: 200px;
-    height: 350px;
-}
 .crown{
     color: gold;
     position: absolute;
@@ -199,8 +199,11 @@
 .top{
     height: 80%;
     width: 100%;
-    background-image: url("../image/ss.png");
-    background-size: cover;
+}
+.top img {
+    width: 250px;
+    height: 320px;
+    border-bottom: solid thin rgba(0,0,0,0.1);;
 }
 .bottom{
     height: 20%;
@@ -230,8 +233,73 @@
 .buy:hover .cart{
     transform: translateY(3px);
 }
-
 /* End Card */
+.medium-card{
+    width: 250px;
+    height: 400px;
+}
+
+.medium-card-buy {
+    height: 100%;
+    float:right;
+    width: calc(30% - 2px);
+    border-left: solid thin rgba(0,0,0,0.1);
+    font-size: 23px;
+    padding: 23px 22px 20px 15px;
+    /* margin-right: 4%; */
+}
+.buy:hover{
+    background-color: rgb(231, 231, 231);
+}
+.cart{
+    transition: all .4s;
+}
+.buy:hover .cart{
+    transform: translateY(3px);
+}
+.medium-card-details h2{
+    font-size: 17px;
+}
+.medium-card-details{
+    padding: 20px 10px;
+}
+/* Small Card */
+.small-card-container {
+    margin-top: 100px;
+}
+.small-card {
+    width: 200px;
+    height: 350px;
+}
+.small-card-details{
+    padding: 10px;
+    height: 100%;
+    float:left;
+    width: calc(80% - 40px);
+}
+.small-card-details h2{
+    font-size: 20px;
+}
+.small-card-buy {
+    height: 100%;
+    float:right;
+    width: calc(30% - 2px);
+    border-left: solid thin rgba(0,0,0,0.1);
+    font-size: 22px;
+    padding: 18px 22px 20px 15px;
+    /* margin-right: 4%; */
+}
+.small-card-buy:hover{
+    background-color: rgb(231, 231, 231);
+}
+.cart{
+    transition: all .4s;
+}
+.small-card-buy:hover .cart{
+    transform: translateY(3px);
+}
+/* END Small Card */
+/* END Middle Container */
 
 /* Comment */
 .comment {
@@ -472,6 +540,22 @@ button:focus {
 }
 
 
+@media only screen and (min-width: 1200px) {
+    .show{
+        display:inline-block;
+    }
+    .pad-30{
+        margin: 30px 30px;
+    }
+    .prev-next{
+        width: 10%;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .width-25{
+        margin: 0 auto;
+    }
+}
 @media only screen and (min-width: 992px) {
     .mt-20{
         margin-top: 200px;
@@ -480,7 +564,7 @@ button:focus {
 
 @media only screen and (max-width: 768px) {
     .top-container{
-        padding-top: 5px;    
+        margin-top: 0;    
     }
 
     .top-container h1{
@@ -496,7 +580,7 @@ button:focus {
         margin: 10px auto 0 auto;
     }
     .container-symbol{
-        margin: -70px 0 50px 0;
+        margin: -90px 0 50px 0;
     }
     .costumers-pic {
         border-radius: 50%;

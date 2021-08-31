@@ -54,7 +54,7 @@
     <div class="container">
         <div class="row">
             <div class="col text-center lh-1"><a href="#" class="text-decoration-none text-black">Beranda</a></div>
-            <div class="col text-center lh-1"><a href="#" class="text-decoration-none text-black">Semua Produk</a></div>
+            <div class="col text-center lh-1"><a href="/all" class="text-decoration-none text-black">Semua Produk</a></div>
             <div class="col text-center lh-1"><a href="#" class="text-decoration-none text-black">Joran</a></div>
             <div class="col text-center lh-1">
                 <a class="dropdown-toggle text-black text-decoration-none" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -103,51 +103,90 @@
       <!-- card -->
 <div class="container">
   
-  <div id="bestseller" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div id="bestseller" class="carousel width-25 carousel-dark slide m-auto" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#bestseller" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button> 
-      <% for( let i = 1; i < myHook.length; i++ ) { %>
+      <% for( let i = 1; i < item.length/3; i++ ) { %>
         <button type="button" data-bs-target="#bestseller" data-bs-slide-to="<%= i %>" aria-current="true" aria-label="Slide <%= i+1 %> "></button> 
       <% } %>
       
 
     </div>
-    <div class="carousel-inner bg-light">
+    <div class="carousel-inner bg-transparent pb-2">
       <h2 class="rekomen">Rekomendasi</h2>
-      <% for( let i = 0; i < myHook.length; i++ ) { %>
+      <% for( let i = 0; i < item.length; i+=3 ) { %>
       <% if (i == 0) { %>
-        <div class="carousel-item active"> 
+        <div class="carousel-item active text-center"> 
       <% } else { %>
-        <div class="carousel-item">
+        <div class="carousel-item text-center">
       <% } %> 
-        <div class="card">
-          <div class="card-container">
-            <div class="top"></div>
-              <div class="bottom">
-                <div class="left">
-                  <div class="details">
-                    <h2><%= myHook[i] %></h2>
-                    <p>Rp. 7000</p>
+          <div class="card medium-card d-inline-block pad-30">
+            <div class="card-container">
+              <div class="top">
+                <!-- <img src="https://live.staticflickr.com/65535/51414010431_57225e11c7_z.jpg" alt="" >  -->
+                <img src="<%= "https://live.staticflickr.com/65535/" + item[i].name%>" alt="">
+                <%=  %> 
+              </div>
+                <div class="bottom">
+                  <div class="left">
+                    <div class="details medium-card-details">
+                      <h2><%= item[i].name %></h2>
+                      <p>Rp. <%= item[i].price %></p>
+                    </div>
+                    <div class="medium-card-buy">
+                      <i class="fas fa-cart-plus cart"></i>
+                    </div>
                   </div>
-                  <div class="buy">
-                    <i class="fas fa-cart-plus cart"></i>
+                  <div class="right"></div>
+                </div>
+              </div>
+            </div>
+          <div class="show">
+            <div class="card medium-card d-inline-block pad-30">
+              <div class="card-container">
+                <div class="top"></div>
+                  <div class="bottom">
+                    <div class="left">
+                      <div class="details medium-card-details">
+                        <h2><%= item[i+1].name %></h2>
+                        <p>Rp. <%= item[i+1].price %></p>
+                      </div>
+                      <div class="medium-card-buy">
+                        <i class="fas fa-cart-plus cart"></i>
+                      </div>
+                    </div>
+                    <div class="right"></div>
                   </div>
                 </div>
-                <div class="right"></div>
+              </div>
+            <div class="card medium-card d-inline-block pad-30">
+              <div class="card-container">
+                <div class="top"></div>
+                  <div class="bottom">
+                    <div class="left">
+                      <div class="details medium-card-details">
+                        <h2><%= item[i+2].name %></h2>
+                        <p>Rp. <%= item[i+2].price %></p>
+                      </div>
+                      <div class="medium-card-buy">
+                        <i class="fas fa-cart-plus cart"></i>
+                      </div>
+                    </div>
+                    <div class="right"></div>
+                  </div>
+                </div>
               </div>
           </div>
+          
         </div>
-      </div>
       <% } %>
     </div>
     
-    <button class="carousel-control-prev" type="button" data-bs-target="#bestseller" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
+    <button class="carousel-control-prev prev-next" type="button" data-bs-target="#bestseller" data-bs-slide="prev">
+      <span><i class="fas fa-arrow-circle-left text-black-50 fs-1 me-1"></i></span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#bestseller" data-bs-slide="next">
-      <span class="carousel-control-next-icon text-black" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
+    <button class="carousel-control-next prev-next" type="button" data-bs-target="#bestseller" data-bs-slide="next">
+      <span><i class="fas fa-arrow-circle-right text-black-50 fs-1 ms-1"></i></span> 
     </button>
   </div>
 </div>
@@ -209,7 +248,7 @@
 <!-- dev -->
 <div class="container text-center pb-5 pt-3">
   <div class="comment-header pb-5">Developer</div>
-  <div class="my-container">
+  <div class="my-container pb-5">
     <span class="noob">new</span>
     <div class="clear"></div>
     <div class="image">
@@ -220,7 +259,7 @@
     <p class="fw-bold">front-end developer</p>
     <button type="button" class="btn btn-info btn-call">Message</button>
     <button type="button" class="btn btn-outline-info btn-call">Portofolio</button>
-    <div class="skills">
+    <!-- <div class="skills">
       <p class="fw-bold text-light">SKILLS</p>
       <ul class="text-decoration-none">
         <button class="btn btn-outline-light small rounded-0 mt-2 me-1">Front End Development</button>
@@ -230,8 +269,13 @@
         <button class="btn btn-outline-light small rounded-0 mt-2 me-1">PHP</button>
         <button class="btn btn-outline-light small rounded-0 mt-2 me-1">Node</button>
       </ul>
-    </div>
+    </div> -->
   </div>
   
 </div>
 <%-include("partials/footer.ejs")-%>
+
+
+<!-- <a data-flickr-embed="true" href="https://www.flickr.com/photos/193888263@N08/51414010431/in/dateposted-public/" title="IMG_0765">
+  <img src="https://live.staticflickr.com/65535/51414010431_57225e11c7_z.jpg" width="433" height="577" alt="IMG_0765">
+</a> -->
