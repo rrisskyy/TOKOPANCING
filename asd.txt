@@ -6,3 +6,77 @@
 > git clean -f -q -- C:\Users\Lenovo-PC\Desktop\KALTIMTUNTAS\KALTIMTUNTAS\java\.idea\libraries\WhatsApp_Unknown_2021_04_24_at_11_49_49.xml
 > git clean -f -q -- C:\Users\Lenovo-PC\Desktop\KALTIMTUNTAS\KALTIMTUNTAS\java\Anak.java C:\Users\Lenovo-PC\Desktop\KALTIMTUNTAS\KALTIMTUNTAS\java\Dewasa.java C:\Users\Lenovo-PC\Desktop\KALTIMTUNTAS\KALTIMTUNTAS\java\KALTIMTUNTAS.iml C:\Users\Lenovo-PC\Desktop\KALTIMTUNTAS\KALTIMTUNTAS\java\Main.java C:\Users\Lenovo-PC\Desktop\KALTIMTUNTAS\KALTIMTUNTAS\java\Manusia.java C:\Users\Lenovo-PC\Desktop\KALTIMTUNTAS\KALTIMTUNTAS\java\Tua.java C:\Users\Lenovo-PC\Desktop\KALTIMTUNTAS\KALTIMTUNTAS\java\WhatsApp Unknown 2021-04-24 at 11.49.49.zip
 
+const charm = new Item ({
+    name:"Charm",
+    price:7000,
+    itemType:"Hook"
+})
+const carbon = new Item ({
+    name:"Carbon",
+    price:7000,
+    itemType:"Hook"
+})
+const owner = new Item ({
+    name:"Owner",
+    price:28000,
+    itemType:"Hook"
+})
+const kaizen = new Item ({
+    name:"Kaizen",
+    price:8000,
+    itemType:"Hook"
+})
+const jhook = new Item ({
+    name:"JHook",
+    price:4000,
+    itemType:"Hook"
+})
+const daido = new Item ({
+    name:"Daido",
+    price:8000,
+    itemType:"Kili"
+})
+const pioneer = new Item ({
+    name:"Pioneer",
+    price:8000,
+    itemType:"Kili"
+})
+const kaizen = new Item ({
+    name:"Kaizen Gin 4000",
+    price:180000,
+    itemType:"Reel"
+})
+const fugu = new Item ({
+    name:"Fugu Aojiro 6000",
+    price:4000,
+    itemType:"Reel"
+})
+Item.insertMany([daido, pioneer, fugu, kaizen], (err) => {
+    if (err) {
+        console.log(err);
+    } else {
+        console.log("Berhasil Dimasukkan kedalam database");
+    }
+});
+// Item.insertMany([charm, carbon, owner, kaizen, jhook], (err) => {
+//     if (err) {
+//         console.log(err);
+//     } else {
+//         console.log("Berhasil Dimasukkan kedalam database");
+//     }
+// });
+
+// Item.updateOne({_id:"612c3c0f6ef1e8544879e0f4"}, {price:4000}, (err) => {
+//     if(err) {
+//         console.log(err);
+//     } else {
+//         console.log("Success");
+//     }
+// })
+// Item.deleteOne({_id:"612c3c0f6ef1e8544879e0f4"}, (err) => {
+//     if(err) {
+//         console.log(err);
+//     } else {
+//         console.log("Success");
+//     }
+// })
