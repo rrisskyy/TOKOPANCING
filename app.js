@@ -47,6 +47,12 @@ app.get("/all", (req, res) => {
     let allCategories = ["Joran", "Reel", "Lure", "Mata Pancing", "Nylon", "Timah Pemberat"]
     res.render("all", {items: allItems, category:allCategories})
 })
+app.get("/admin/", (req, res) => {
+    res.render(__dirname + "/views/admin/index")
+});
+app.get("/admin/post/", (req, res) => {
+    res.render(__dirname + "/views/admin/post")
+});
 
 app.listen(3000, () => {
     console.log("Server start at port 3000");

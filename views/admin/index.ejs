@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-admin navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><h2 class="navbar-brand-text text-warning">Dashboard</h2></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end flex-grow-1">
+
+              <li class="nav-item">
+                <h2 class="navbar-brand-text text-warning pe-5">Toko <span class="pt-3 ps-2 text-info">Pancing</span></h2>
+              </li>
+              <li class="nav-item">
+                <form class="d-flex">
+                    <input class="form-control me-2 bg-light" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-warning" type="submit">Search</button>
+                  </form>
+              </li>
+              <li>
+                <div class="dropstart">
+                  <button class="btn btn-transparent shadow-none  " id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-user-cog text-warning pe-3 ps-3 fs-4"></i>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item active" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                  </ul>
+                </div>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#"></a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- End Navbar -->     
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-2 text-black-50">
+              <ul>
+                <li class="border-bottom"><a href="admin/" class="posting text-warning"><p><i class="fas fa-tachometer-alt pe-2 pt-4 mt-2"></i></i>Dashboard</p></a></li>
+                <li class="border-bottom"><a href="/admin/post/"class="posting text-warning"><p><i class="fas fa-cloud-upload-alt pe-2 pt-4 mt-2"></i>Posting</p></a></li>
+                <li class="border-bottom"><a href="/admin/list" class="posting text-warning"><p><i class="fas fa-list pe-2 pt-4 mt-2"></i>List Barang</p></a></li>
+                <li class="border-bottom"><a href="/admin/report" class="posting text-warning"><p><i class="fas fa-wallet pe-2 pt-4 mt-2"></i>Laporan Penjualan</p></a></li>
+                <li class="border-bottom"><a href="/admin/chart" class="posting text-warning"><p><i class="fas fa-chart-pie pe-2 pt-4 mt-2"></i>Grafik Penjualan</p></a></li>
+              </ul>
+        </div>
+          <div class="col-sm-10">colLorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, iure sapiente consequatur numquam adipisci qui officia dignissimos accusamus optio iusto odit ipsum rem et voluptas sint, facere laboriosam totam incidunt!Loremlorem q Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, eum quasi? Laborum repellendus quas, consequuntur consectetur debitis minus itaque minima quod assumenda eos nemo, doloremque saepe voluptatibus atque. Sit, cum?</div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
