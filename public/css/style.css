@@ -199,7 +199,6 @@
 .top{
     height: 80%;
     width: 100%;
-    background-image: url("../image/ss.png");
     background-size: cover;
 }
 .bottom{
@@ -255,7 +254,7 @@
     transform: translateY(3px);
 }
 .medium-card-details h2{
-    font-size: 17px;
+    font-size: 13px;
 }
 .medium-card-details{
     padding: 20px 10px;

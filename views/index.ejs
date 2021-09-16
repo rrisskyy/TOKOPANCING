@@ -106,15 +106,15 @@
   <div id="bestseller" class="carousel width-25 carousel-dark slide m-auto" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#bestseller" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button> 
-      <% for( let i = 1; i < item.length/3; i++ ) { %>
+      <% for( let i = 1; i < 3; i++ ) { %>
         <button type="button" data-bs-target="#bestseller" data-bs-slide-to="<%= i %>" aria-current="true" aria-label="Slide <%= i+1 %> "></button> 
       <% } %>
       
-
+<!-- Recomended -->
     </div>
     <div class="carousel-inner bg-transparent pb-2">
       <h2 class="rekomen">Rekomendasi</h2>
-      <% for( let i = 0; i < item.length; i+=3 ) { %>
+      <% for( let i = 0; i < 9; i+=3 ) { %>
       <% if (i == 0) { %>
         <div class="carousel-item active text-center"> 
       <% } else { %>
@@ -126,8 +126,8 @@
                 <div class="bottom">
                   <div class="left">
                     <div class="details medium-card-details">
-                      <h2><%= item[i].name %></h2>
-                      <p>Rp. <%= item[i].price %></p>
+                      <h2><%= recomended[i].name %></h2>
+                      <p>Rp. <%= recomended[i].price %></p>
                     </div>
                     <div class="medium-card-buy">
                       <i class="fas fa-cart-plus cart"></i>
@@ -144,8 +144,8 @@
                   <div class="bottom">
                     <div class="left">
                       <div class="details medium-card-details">
-                        <h2><%= item[i+1].name %></h2>
-                        <p>Rp. <%= item[i+1].price %></p>
+                        <h2><%= recomended[i+1].name %></h2>
+                        <p>Rp. <%= recomended[i+1].price %></p>
                       </div>
                       <div class="medium-card-buy">
                         <i class="fas fa-cart-plus cart"></i>
@@ -161,8 +161,8 @@
                   <div class="bottom">
                     <div class="left">
                       <div class="details medium-card-details">
-                        <h2><%= item[i+2].name %></h2>
-                        <p>Rp. <%= item[i+2].price %></p>
+                        <h2><%= recomended[i+2].name %></h2>
+                        <p>Rp. <%= recomended[i+2].price %></p>
                       </div>
                       <div class="medium-card-buy">
                         <i class="fas fa-cart-plus cart"></i>
@@ -243,7 +243,7 @@
 
 <!-- dev -->
 <div class="container text-center pb-5 pt-3">
-  <div class="comment-header pb-5">Developer</div>
+  <!-- <div class="comment-header pb-5">Developer</div>
   <div class="my-container pb-5">
     <span class="noob">new</span>
     <div class="clear"></div>
@@ -255,7 +255,7 @@
     <p class="fw-bold">front-end developer</p>
     <button type="button" class="btn btn-info btn-call">Message</button>
     <button type="button" class="btn btn-outline-info btn-call">Portofolio</button>
-    <!-- <div class="skills">
+    <div class="skills">
       <p class="fw-bold text-light">SKILLS</p>
       <ul class="text-decoration-none">
         <button class="btn btn-outline-light small rounded-0 mt-2 me-1">Front End Development</button>
@@ -265,8 +265,8 @@
         <button class="btn btn-outline-light small rounded-0 mt-2 me-1">PHP</button>
         <button class="btn btn-outline-light small rounded-0 mt-2 me-1">Node</button>
       </ul>
-    </div> -->
-  </div>
+    </div>
+  </div> -->
   
 </div>
 <%-include("partials/footer.ejs")-%>
