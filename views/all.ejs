@@ -1,32 +1,28 @@
 <%-include("partials/header.ejs")-%>
   
 <div class="small-card-container container text-center">
-    
     <div class="text-left">
-      <% for( let i = 0; i < category.length; i++ ) { %>
-        <h2><%=category[i]%></h2>
-        <% for( let j = 0; j < items.length; j++ ) { %>
-        <div class="card d-inline-block small-card text-start">
-          <div class="card-container">
-            <div class="top"></div>
-              <div class="bottom">
-                <div class="left">
-                  <div class="small-card-details">
-                    <h2><%=items[j]%></h2>
-                    <p>Rp. 7000</p>
-                  </div>
-                  <div class="small-card-buy">
-                    <i class="fas fa-cart-plus cart"></i>
+      <% category.forEach((c, i) => { %>
+        <h2 class="page-scroll text-warning" id = "<%=c%>" ><%= c %></h2>
+        <% itemsCategories[i].forEach((item) => { %> 
+          <div class="card d-inline-block small-card text-start">
+            <div class="card-container">
+              <div class="top">
+                <img src="<%= '/uploads/images/' + item.fileName %> " class="imgSmall" alt="<%=item.name%>">
+              </div>
+                <div class="bottom">
+                  <div class="left">
+                    <div class="small-card-details">
+                      <h2><%=item.name%></h2>
+                      <p>Rp. <%=item.price%></p>
+                    </div>
                   </div>
                 </div>
-                <div class="right"></div>
-              </div>
+            </div>
           </div>
-        </div>
-  
-      <% } %>
-      <% } %>
-    </div>
+        <% }) %> 
+      <% }) %> 
+    </div>  
 </div>
   
 <%-include("partials/footer.ejs")-%>

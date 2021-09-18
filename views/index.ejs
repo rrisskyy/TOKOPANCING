@@ -2,7 +2,7 @@
 
 <!-- Top Container -->
 <div class="top-container">
-    <div class="container">
+    <div class="container pb-5">
         <div class="row">
             <div class="col">
               <h1 class="text-light"> Toko Alat Pancing </h1>
@@ -29,7 +29,7 @@
                   </div>
               </div>
             </div>
-            <div class="col pt-5 mt-20">
+            <div class="col pe-4 mt-20">
                 <div class="container container-symbol">
                     <div class="row">
                       <div class="col"><i class="fas fa-store pe-2 pt-5 text-white produk"></i> <span class="text-white "> Total <span class="pe-2">Produk: </span> <span class="text-warning"> 120</span>  </span></div>
@@ -55,22 +55,22 @@
         <div class="row">
             <div class="col text-center lh-1"><a href="#" class="text-decoration-none text-black">Beranda</a></div>
             <div class="col text-center lh-1"><a href="/all" class="text-decoration-none text-black">Semua Produk</a></div>
-            <div class="col text-center lh-1"><a href="#" class="text-decoration-none text-black">Joran</a></div>
+            <div class="col text-center lh-1"><a href="/all/#Joran" class="text-decoration-none text-black">Joran</a></div>
             <div class="col text-center lh-1">
                 <a class="dropdown-toggle text-black text-decoration-none" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Kategori
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                    <li><a class="dropdown-item" href="#">Joran</a></li>
-                    <li><a class="dropdown-item" href="#">Reel</a></li>
-                    <li><a class="dropdown-item" href="#">Lure</a></li>
-                    <li><a class="dropdown-item" href="#">Mata Pancing</a></li>
-                    <li><a class="dropdown-item" href="#">Senar Nylon</a></li>
-                    <li><a class="dropdown-item" href="#">Timah Pemberat</a></li>
+                    <li><a class="dropdown-item" href="/all/#Joran">Joran</a></li>
+                    <li><a class="dropdown-item" href="/all/#Reel">Reel</a></li>
+                    <li><a class="dropdown-item" href="/all/#Lure">Lure</a></li>
+                    <li><a class="dropdown-item" href="/all/#Mata%20Pancing">Mata Pancing</a></li>
+                    <li><a class="dropdown-item" href="/all/#Nylon">Senar Nylon</a></li>
+                    <li><a class="dropdown-item" href="/all/#Timah%20Pemberat">Timah Pemberat</a></li>
                     <li>
                       <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="#">Lain - Lain</a></li>
+                    <li><a class="dropdown-item page-scroll" href="/all/#Lainnya">Lain - Lain</a></li>
                   </ul>
             </div>
         </div>
@@ -82,12 +82,14 @@
         <div class="col">
           <div class="card"><i class="fas fa-crown position-absolute crown"></i>
             <div class="card-container">
-              <div class="top"></div>
+              <div class="top">
+                <img src="<%= '/uploads/images/' + items[8].fileName %> " class="imgBig" alt="">
+              </div>
                 <div class="bottom">
                   <div class="left">
                     <div class="details">
-                      <h2>Charm</h2>
-                      <p>Rp. 7000</p>
+                      <h2><%= items[8].name %></h2>
+                      <p>Rp. <%= items[8].price %></p>
                     </div>
                     <div class="buy">
                       <i class="fas fa-cart-plus cart"></i>
@@ -99,7 +101,6 @@
           </div>
         </div>
       <!-- End row 1 -->
-
       <!-- card -->
 <div class="container">
   
@@ -122,7 +123,9 @@
       <% } %> 
           <div class="card medium-card d-inline-block pad-30">
             <div class="card-container">
-              <div class="top"></div>
+              <div class="top">
+                  <img src="<%= '/uploads/images/' + recomended[i].fileName %> " class="imgMedium" alt="">
+              </div>
                 <div class="bottom">
                   <div class="left">
                     <div class="details medium-card-details">
@@ -140,7 +143,9 @@
           <div class="show-card">
             <div class="card medium-card d-inline-block pad-30">
               <div class="card-container">
-                <div class="top"></div>
+                <div class="top">
+                  <img src="<%= '/uploads/images/' + recomended[i+1].fileName %> " class="imgMedium" alt="">
+                </div>
                   <div class="bottom">
                     <div class="left">
                       <div class="details medium-card-details">
@@ -157,7 +162,9 @@
               </div>
             <div class="card medium-card d-inline-block pad-30">
               <div class="card-container">
-                <div class="top"></div>
+                <div class="top">
+                  <img src="<%= '/uploads/images/' + recomended[i+2].fileName %> " class="imgMedium" alt="">
+                </div>
                   <div class="bottom">
                     <div class="left">
                       <div class="details medium-card-details">
@@ -186,9 +193,9 @@
     </button>
   </div>
 </div>
-
+<a href="/all" class="btn btn-warning btn-sm mb-2 text-white">Lihat Lainnya...</a>
 <div class="container">
-  <h2 class="comment-header">Apa yang Dikatakan Costumer Kami</h2>
+  <h2 class="comment-header">Apa yang Dikatakan Customer Kami</h2>
   <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
