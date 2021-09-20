@@ -1,47 +1,37 @@
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
 
-  // If we need pagination
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  // init: false,
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    856: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+    1152: {
+      slidesPerView: 3,
+      spaceBetween: 0,
+    },
+    1556: {
+      slidesPerView: 4,
+      spaceBetween: 0,
+    },
   },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
 });
 
-
-const btn = document.querySelector("#button");
-
-btn.addEventListener('click', () => {
-
-  const itemName = document.getElementById("itemName").value;
-  const photo = document.getElementById("formFile").value;
-  const price = document.getElementById("price").value;
-  if (itemName == "" || photo == "" || price == "") {
-  Swal.fire({
-    title: 'Gagal!',
-    text: 'Klik OK untuk melanjutkan',
-    icon: 'error',
-    confirmButtonText: 'OK'
-  })
-  } else {
-    Swal.fire({
-      title: 'Berhasil!',
-      text: 'Klik OK untuk melanjutkan',
-      icon: 'success',
-      confirmButtonText: 'OK'
-    }).then(() => { 
-      location.reload()
-  });
-    
-  }
-  
-
-})
   // Swal.fire({
   //   title: 'Apa Anda Yakin?',
   //   text: "Jika terdapat kesalahan, anda tetap dapat mengeditnya!",

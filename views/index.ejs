@@ -63,19 +63,21 @@
     <div class="container product-logo-container">
       <h3 class="product-logo-title-2 text-secondary ">Produk</span></h3>
       <h2 class="product-logo-title text-primary">LIHAT SEMUA KATEGORI</h2>
-      <div class="row">
-        <a href="/all/#Joran" class="col-lg-3 col-md-4 mt-4 text-center product-logo-items btn btn-light"><img src="/image/1.png" alt=""></a>
-        <a href="#" class="col-lg-3 col-md-4 mt-4 text-center product-logo-items btn btn-light"><img src="/image/2.png" alt=""></a>
-        <a href="#" class="col-lg-3 col-md-4 mt-4 text-center product-logo-items btn btn-light"><img src="/image/3.png" alt=""></a>
-        <a href="#" class="col-lg-3 col-md-4 mt-4 text-center product-logo-items btn btn-light"><img src="/image/4.png" alt=""></a>
-        <a href="#" class="col-lg-3 col-md-4 mt-4 text-center product-logo-items btn btn-light"><img src="/image/5.png" alt=""></a>
-        <a href="#" class="col-lg-3 col-md-4 mt-4 text-center product-logo-items btn btn-light"><img src="/image/soon.png" alt=""></i></a>
-        <a href="#" class="col-lg-3 col-md-4 mt-4 text-center product-logo-items btn btn-light"><img src="/image/soon.png" alt=""></i></a>
-        <a href="#" class="col-lg-3 col-md-4 mt-4 text-center product-logo-items btn btn-light"><img src="/image/soon.png" alt=""></i></a>
-        <a href="#" class="col-lg-3 col-md-4 mt-4 text-center product-logo-items btn btn-light"><img src="/image/soon.png" alt=""></i></a>
-        <a href="#" class="col-lg-3 col-md-4 mt-4 text-center product-logo-items btn btn-light"><img src="/image/soon.png" alt=""></i></a>
-        <a href="#" class="col-lg-3 col-md-4 mt-4 text-center product-logo-items btn btn-light"><img src="/image/soon.png" alt=""></i></a>
-        <a href="#" class="col-lg-3 col-md-4 mt-4 text-center product-logo-items btn btn-light"><img src="/image/soon.png" alt=""></i></a>
+    </div>
+    <div class="container-fluid product-logo-container p-0">
+      <div class="bg-lightblue">
+        <div class="container">
+        <div class="row">
+            <a href="/#joran" class="col-lg-3 col-md-4 mt-4 text-center product-logo-items btn bg-white"><img src="/image/1.png" alt=""></a>
+            <a href="/#reel" class="col-lg-3 col-md-4 mt-4 text-center product-logo-items btn bg-white"><img src="/image/2.png" alt=""></a>
+            <a href="/#lure" class="col-lg-3 col-md-4 mt-4 text-center product-logo-items btn bg-white"><img src="/image/3.png" alt=""></a>
+            <a href="#" class="col-lg-3 col-md-4 mt-4 text-center product-logo-items btn bg-white"><img src="/image/4.png" alt=""></a>
+            <a href="#" class="col-lg-3 col-md-4 mt-4 text-center product-logo-items btn bg-white"><img src="/image/5.png" alt=""></a>
+            <a href="#" class="col-lg-3 col-md-4 mt-4 text-center product-logo-items btn bg-white"><img src="/image/soon.png" alt=""></i></a>
+            <a href="#" class="col-lg-3 col-md-4 mt-4 text-center product-logo-items btn bg-white"><img src="/image/soon.png" alt=""></i></a>
+            <a href="#" class="col-lg-3 col-md-4 mt-4 text-center product-logo-items btn bg-white"><img src="/image/soon.png" alt=""></i></a>
+          </div>
+        </div>
       </div>
     </div>
     
@@ -87,7 +89,7 @@
         <% for(let i = 0; i < items.length; i++){ %> 
         <% if (i === 8 || i === 9 || i === 12){ %> 
           <div class="col-lg-4 col-md-3 mt-4 best-items">
-            <div class="card">
+            <div class="card scaled-card">
               <div class="crown-position"><i class="fas fa-crown position-absolute crown text-primary"></i></div>
               <div class="card-container">
                 <div class="top text-center">
@@ -111,40 +113,144 @@
     
 
 
-
-<!-- Slider main container -->
-<section class="container">
-  <div class="swiper container-left">
-    <!-- Additional required wrapper -->
-    
-    <h2 class="text-primary poppins"><%= category[1] %> </h2>
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <% itemsCategories[1].forEach((item) => { %> 
-        <div class="swiper-slide">
-          <div class="card">
-            <div class="card-container">
-              <div class="top text-center">
-                <img src="<%= '/uploads/images/' + item.fileName %>" class="imgBig" alt="">
-              </div>
-              <div class="bottom">
-                <div class="details">
-                  <h2><%= item.name %></span></h2>
-                  <hr>
-                  <p>Rp. <%= item.price %></p>
+<div class="row container-left">
+  <div class="col-md-9">
+    <!-- Slider main container -->
+    <section class="container-fluid" id="joran">
+      <div class="swiper" data-aos="fade-right">
+        <!-- Additional required wrapper -->        
+        <h2 class="text-primary poppins">Joran</h2>
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <% itemsCategories[0].forEach((item) => { %> 
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="<%= '/uploads/images/' + item.fileName %> " class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2><%= item.name %></h2>
+                            <hr>
+                            <p>Rp. <%= item.price %></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      <% }) %>
-      <!-- End Slides -->
+          <% }) %>
+          <!-- End Slides -->
 
-    </div>
-    <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
   </div>
-</section>
+  <div class="col-md-3 m-auto">
+    <!-- <img src="/image/reel.png" alt="" class="img-items"> -->
+  </div>
+</div>
+
+<div class="row container-right">
+  <div class="col-md-3 m-auto">
+    <!-- <img src="/image/joran.png" class="img-items float-end" alt=""> -->
+    <div class="clear"></div>
+  </div>
+  <div class="col-md-9">
+    <!-- Slider main container -->
+    <section class="container-fluid" id="reel">
+      <div class="swiper"  data-aos="fade-left">
+        <!-- Additional required wrapper -->        
+        <h2 class="text-primary poppins title-right">Reel</h2>
+        <div class="clear"></div>
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <% itemsCategories[1].forEach((item) => { %> 
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="<%= '/uploads/images/' + item.fileName %> " class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2><%= item.name %></h2>
+                            <hr>
+                            <p>Rp. <%= item.price %></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          <% }) %>
+          <!-- End Slides -->
+
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+  </div>
+
+</div>
+
+<div class="row container-left">
+  <div class="col-md-9">
+    <!-- Slider main container -->
+    <section class="container-fluid" id="lure">
+      <div class="swiper" data-aos="fade-right">
+        <!-- Additional required wrapper -->        
+        <h2 class="text-primary poppins">Lure</h2>
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <% itemsCategories[2].forEach((item) => { %> 
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="<%= '/uploads/images/' + item.fileName %> " class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2><%= item.name %></h2>
+                            <hr>
+                            <p>Rp. <%= item.price %></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          <% }) %>
+          <!-- End Slides -->
+
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+  </div>
+  <div class="col-md-3 text-bottom">
+    <!-- <img src="/image/frog.png" alt="" class="img-items"> -->
+  </div>
+</div>
+
 
 
 
@@ -164,7 +270,7 @@
       <% } %>
     </div>
 
-<a href="/all" class="btn btn-warning btn-sm mb-2 text-white">Lihat Lainnya...</a>
+
 <div class="container">
   <h2 class="comment-header">Apa yang Dikatakan Customer Kami</h2>
   <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -247,4 +353,5 @@
   </div> -->
   
 </div>
+
 <%-include("partials/footer.ejs")-%>
