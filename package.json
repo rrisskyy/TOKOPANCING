@@ -26,6 +26,7 @@
     "multer": "^1.4.3",
     "nodemon": "^2.0.12",
     "path": "^0.12.7",
-    "sweetalert2": "^11.1.4"
+    "sweetalert2": "^11.1.4",
+    "swiper": "^7.0.6"
   }
 }

@@ -51,48 +51,6 @@ app.use(express.static("public"));
 
 
 app.get("/", (req, res) => {
-        
-    Item.find({}, (err, itemsFound) => {
-        if (err) {
-            console.log(err);
-        } else {
-            let arr = new Set();
-            let random = [];
-            let randomItems = []  
-            let recomended = []
-            
-            itemsFound.forEach((item) => {
-                if (item.itemType === "Lure" || item.itemType === "Joran" || item.itemType === "Reel") {
-                    recomended.push(item);
-                }
-            })  
-            const generateRandomNumber = (min, max) =>  {
-                return Math.floor(Math.random() * (max - min) + min);
-            };
-            while(arr.size !== 9) {
-                arr.add(generateRandomNumber(0, recomended.length));
-            }
-            arr.forEach((item) => {
-                random.push(item);
-            })  
-                        
-            for (i = 0; i<9; i++) {
-                randomItems.push(recomended[random[i]]);
-            };
-            res.render('index', {
-                items: itemsFound,
-                recomended: randomItems
-            });
-        }
-    });    
-});
-
-
-app.get("/login", (req, res) => {
-    res.render("login")
-})
-
-app.get("/all", (req, res) => {
     let [joran, reel, lure, hook, snap, kiliKili, nylon, timahPemberat, lainnya] = [[], [], [], [], [], [], [], [], []];
     Item.find({}, (err, itemsFound) => {
         if (err) {
@@ -134,7 +92,7 @@ app.get("/all", (req, res) => {
             let categories = ["Joran", "Reel", "Lure", "Mata Pancing", "Snap", "Kili Kili", "Nylon", "Timah Pemberat", "Lainnya"] 
             let itemsCategories = [joran, reel, lure, hook, snap, kiliKili, nylon, timahPemberat, lainnya]
             
-            res.render("all", {
+            res.render("index", {
                 items: itemsFound, 
                 category: categories,
                 itemsCategories: itemsCategories
@@ -142,6 +100,12 @@ app.get("/all", (req, res) => {
         }
     });        
 })
+
+
+app.get("/login", (req, res) => {
+    res.render("login")
+})
+
 
 
 app.get("/admin", (req, res) => {

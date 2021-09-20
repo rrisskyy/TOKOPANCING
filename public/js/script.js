@@ -1,4 +1,17 @@
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
 
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
 
 
 const btn = document.querySelector("#button");
@@ -29,7 +42,6 @@ btn.addEventListener('click', () => {
   
 
 })
-
   // Swal.fire({
   //   title: 'Apa Anda Yakin?',
   //   text: "Jika terdapat kesalahan, anda tetap dapat mengeditnya!",
