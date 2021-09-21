@@ -10,7 +10,9 @@ html{
 .bg-lightblue {
     background-color: #f5f5ff;
 }
-
+.img-small {
+    width: 150px;
+}
 
 /* Navbar */
 .fish{
@@ -257,17 +259,17 @@ html{
     width: 100%;
     margin: auto;
 }
-
-.comment {
-    width: 90%;
-    height: 400px;
-    margin: auto;
-}
-.costumers-pic {
+.customers-pic {
+    width: 350px;
     border-radius: 50%;
     height: 25%;
 }
+.pad-l-r {
+    margin: 0 200px;
+}
+
 /* End Comment */
+
 
 footer{
     font-size: 14px;
@@ -576,10 +578,6 @@ li {
     }
     .container-symbol{
         margin: -90px 0 50px 0;
-    }
-    .costumers-pic {
-        border-radius: 50%;
-        height: 25%;
     }
     .overlay-container{
         display: none;
