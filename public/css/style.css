@@ -1,9 +1,81 @@
-html{
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body{
     overflow-x: hidden;
 }
 * {
 	box-sizing: border-box; 
+    padding:0;
+    margin:0;
 }
+.title-montserrat {
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.title-poppins {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.fs-25px{
+    font-size: 25px;
+}
+.font-sans-serif {
+    font-family: sans-serif;
+}
+
+.text-upper{
+    text-transform: uppercase;
+}
+
 .clear {
     clear: both;
 }
@@ -13,7 +85,6 @@ html{
 .img-small {
     width: 150px;
 }
-
 /* Navbar */
 .fish{
     z-index: 10;
@@ -41,26 +112,24 @@ html{
     user-select:none; /*Supaya tidak bisa di block*/
 }
 .top-container{
-    margin: 67px 0 0px 0;
+    margin: 60px 0 0px 0;
     background: url("../image/bg-top.svg");
     background-attachment: fixed;
     width: 100%;
-    background-repeat: repeat-x;
-    /* background-size: cover; */
+    background-size: cover;
+
 }
 .top-container h1{
-    font-family: 'Bebas Neue', cursive;
-    font-weight: bold;
-    font-size: 90px;
-    letter-spacing: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
     padding: 100px 0 0 0;
+    margin: 20px;
 }
 .top-container h5{  
-    font-family: 'Bebas Neue', cursive;
-    font-weight: bold;
-    letter-spacing: 3px;
-    margin-top:-20px;
-    margin-left: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin: 20px;
 }
 .waves {
     position:relative;
@@ -109,11 +178,8 @@ html{
 .middle-container {
     font-family: 'Poppins', sans-serif;
 }
-.poppins {
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-}
+
+
 .product-logo-container {
     font-family: 'Poppins', sans-serif;
 }
@@ -128,7 +194,7 @@ html{
     font-size: 40px;
 }
 
-.best{
+/* .best{
     font-size: 60px;
     font-family: 'Poppins', cursive;
     font-weight: 700;
@@ -136,7 +202,7 @@ html{
     display: block;
     margin: 0 70px 20px 70px;
     text-align: center;
-}
+} */
 
 .card{
     background-color: white;
@@ -167,7 +233,6 @@ html{
 }
 .crown{
     font-size: 70px;
-    transform: rotate(-45deg);
 }
 .crown-position{
     margin-top: 20px;
@@ -201,6 +266,7 @@ html{
     -webkit-align-items: center;
     align-items: center;
   }
+  
 .card-md{
     background-color: white;
     width: 300px;
@@ -253,7 +319,7 @@ html{
     font-family: 'Poppins', cursive;
     font-weight: bold;
     letter-spacing: 1px;
-    color: gold;
+    color: #0d6efd;
     display: block;
     text-align: center;
     width: 100%;
@@ -267,7 +333,6 @@ html{
 .pad-l-r {
     margin: 0 200px;
 }
-
 /* End Comment */
 
 
@@ -527,9 +592,6 @@ li {
 @media only screen and (min-width: 1200px) {
     .middle-container{
         margin-top:100px;
-    }
-    .product-logo-container {
-        padding: 50px 50px 20px 50px;
     }
     .product-logo-items {
         margin: 20px;
