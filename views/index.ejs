@@ -67,7 +67,7 @@
     <div class="container-fluid product-logo-container p-0">
       <div class="bg-lightblue">
         <div class="container">
-        <div class="row">
+        <div class="row m-auto ms-4">
             <a href="/#joran" class="col-lg-3 col-md-4 mt-4 text-center product-logo-items btn bg-white"><img src="/image/1.png" alt=""></a>
             <a href="/#reel" class="col-lg-3 col-md-4 mt-4 text-center product-logo-items btn bg-white"><img src="/image/2.png" alt=""></a>
             <a href="/#lure" class="col-lg-3 col-md-4 mt-4 text-center product-logo-items btn bg-white"><img src="/image/3.png" alt=""></a>
@@ -114,12 +114,12 @@
 
 
 <div class="row container-left">
-  <div class="col-md-9">
+  <div class="col-md-9" data-aos="fade-right" data-aos-delay="300">
     <!-- Slider main container -->
     <section class="container-fluid" id="joran">
-      <div class="swiper" data-aos="fade-right">
+      <div class="swiper">
         <!-- Additional required wrapper -->        
-        <h2 class="text-primary poppins">Joran</h2>
+        <h2 class="text-primary poppins">&nbsp</h2>
         <div class="swiper-wrapper">
           <!-- Slides -->
           <% itemsCategories[0].forEach((item) => { %> 
@@ -153,22 +153,25 @@
       </div>
     </section>
   </div>
-  <div class="col-md-3 m-auto">
+  <div class="col-md-3 m-auto" data-aos="fade-right" data-aos-delay="100">
+    <h2 class="text-primary poppins text-items">Joran</h2>
     <!-- <img src="/image/reel.png" alt="" class="img-items"> -->
   </div>
 </div>
 
 <div class="row container-right">
-  <div class="col-md-3 m-auto">
+  <div class="col-md-3 m-auto" data-aos="fade-left" data-aos-delay="100">
+    <div class="bg-dark">
+      <h2 class="text-primary poppins title-right text-items">Reel</h2>
+    </div>
     <!-- <img src="/image/joran.png" class="img-items float-end" alt=""> -->
-    <div class="clear"></div>
   </div>
-  <div class="col-md-9">
+  <div class="col-md-9" data-aos="fade-left" data-aos-delay="300">
     <!-- Slider main container -->
     <section class="container-fluid" id="reel">
-      <div class="swiper"  data-aos="fade-left">
+      <div class="swiper">
         <!-- Additional required wrapper -->        
-        <h2 class="text-primary poppins title-right">Reel</h2>
+        <h2 class="text-primary poppins title-right">&nbsp</h2>
         <div class="clear"></div>
         <div class="swiper-wrapper">
           <!-- Slides -->
@@ -326,32 +329,6 @@
 </div> 
 
 <!-- dev -->
-<div class="container text-center pb-5 pt-3">
-  <!-- <div class="comment-header pb-5">Developer</div>
-  <div class="my-container pb-5">
-    <span class="noob">new</span>
-    <div class="clear"></div>
-    <div class="image">
-      <img src="image/risky.jpg" alt="" class="rounded-circle">
-    </div>
-    <h3 class="fw-bold">Risky Kurniawan</h3>
-    <h6 class="fw-bold">Kutai Kartanegara</h6>
-    <p class="fw-bold">front-end developer</p>
-    <button type="button" class="btn btn-info btn-call">Message</button>
-    <button type="button" class="btn btn-outline-info btn-call">Portofolio</button>
-    <div class="skills">
-      <p class="fw-bold text-light">SKILLS</p>
-      <ul class="text-decoration-none">
-        <button class="btn btn-outline-light small rounded-0 mt-2 me-1">Front End Development</button>
-        <button class="btn btn-outline-light small rounded-0 mt-2 me-1">HTML</button>
-        <button class="btn btn-outline-light small rounded-0 mt-2 me-1">CSS</button>
-        <button class="btn btn-outline-light small rounded-0 mt-2 me-1">JavaScript</button>
-        <button class="btn btn-outline-light small rounded-0 mt-2 me-1">PHP</button>
-        <button class="btn btn-outline-light small rounded-0 mt-2 me-1">Node</button>
-      </ul>
-    </div>
-  </div> -->
-  
-</div>
+<div class="container text-center pb-5 pt-3"></div>
 
 <%-include("partials/footer.ejs")-%>

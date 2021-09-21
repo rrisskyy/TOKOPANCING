@@ -227,6 +227,10 @@ html{
 .text-bottom {
     margin: 300px auto 0px auto;
 }
+.text-items{
+    font-size: 50px;
+    letter-spacing: 2px;
+}
 
 
 
@@ -265,50 +269,6 @@ html{
 }
 /* End Comment */
 
-
-.my-container{
-    font-family: 'Montserrat', sans-serif;
-    width: 350px;
-    background-color: #28223F;
-    color: white;
-    margin: auto;
-    border-radius: 5px;
-    color: #B3B8CD;
-    font-weight: bold;
-}
-.my-container img{
-    width: 145px;
-    border-radius: 50%;
-    border: 1px solid #03BFCB;
-    border-radius: 50%;
-    padding: 7px;
-}
-.noob {
-    margin: 30px;
-    font-weight: bold;
-    background-color: #FEBB0B;
-    color: #28223F;
-    font-size: 17px;
-    padding: 4px 8px;
-    float: left;
-    border-radius: 3px;
-}
-.btn-call {
-    font-size: 16px;
-    padding: 10px 25px;
-    margin: 10px 0 0 0;
-}
-.skills {
-    padding: 15px;
-    margin-top: 30px;
-    background-color: #1F1A36;
-	text-align: left;
-}
-.skills p{
-    font-size: 12px;
-    text-align: left;
-    padding-left: 20px;
-}
 footer{
     font-size: 14px;
     height: 300px;
@@ -330,6 +290,7 @@ footer li{
     display: inline-block;
     padding-right: 100px; 
 }
+
 
 /* Sign In */
 .sign-in-bg {
@@ -493,9 +454,6 @@ button:focus {
 	width: 100%;
 }
 
-/* .container-admin {
-    
-} */
 .posting {
     text-decoration: none;
 }
