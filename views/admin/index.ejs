@@ -135,7 +135,13 @@
                   <td class="mid"><%= item.name%></td>
                   <td class="mid"><%= item.price%></td>
                   <td class="mid"><%= item.itemType%></td>
-                  <td class="mid"><button type="button" class="btn btn-primary">Edit</button></td>
+                  <td class="mid text-end">
+                    <form action="/admin" method="POST">
+                      <div class="item">
+                        <button id="button" name="item_edit" type="submit" class="btn btn-primary" value="<%=item%>">Edit</button>
+                      </div>
+                    </form>
+                  </td>
                   <td class="mid">
                     <form action="/admin" method="POST">
                       <div class="item">
