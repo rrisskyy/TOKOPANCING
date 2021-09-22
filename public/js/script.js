@@ -51,20 +51,3 @@ const swiper1 = new Swiper('.swiper1', {
   }
 });
 
-  // Swal.fire({
-  //   title: 'Apa Anda Yakin?',
-  //   text: "Jika terdapat kesalahan, anda tetap dapat mengeditnya!",
-  //   icon: 'warning',
-  //   showCancelButton: true,  
-  //   confirmButtonColor: '#3085d6',
-  //   cancelButtonColor: '#d33',
-  //   confirmButtonText: 'Ya, Posting!'
-  // }).then((result) => {
-  //   if (result.isConfirmed) {
-  //     Swal.fire(
-  //       'Berhasil!',
-  //       'Barang telah diunggah!.',
-  //       'success'
-  //     )
-  //   }
-  // })

@@ -121,109 +121,30 @@
           <thead>
             <tr>
               <th scope="col">No</th>
-              <th scope="col">Photo</th>
+              <th scope="col">Foto</th>
               <th scope="col">Nama</th>
               <th scope="col">Harga</th>
               <th scope="col">Tipe</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>1,001</td>
-              <td>random</td>
-              <td>data</td>
-              <td>placeholder</td>
-            </tr>
-            <tr>
-              <td>1,002</td>
-              <td>placeholder</td>
-              <td>irrelevant</td>
-              <td>visual</td>
-            </tr>
-            <tr>
-              <td>1,003</td>
-              <td>data</td>
-              <td>rich</td>
-              <td>dashboard</td>
-            </tr>
-            <tr>
-              <td>1,003</td>
-              <td>information</td>
-              <td>placeholder</td>
-              <td>illustrative</td>
-            </tr>
-            <tr>
-              <td>1,004</td>
-              <td>text</td>
-              <td>random</td>
-              <td>layout</td>
-            </tr>
-            <tr>
-              <td>1,005</td>
-              <td>dashboard</td>
-              <td>irrelevant</td>
-              <td>text</td>
-            </tr>
-            <tr>
-              <td>1,006</td>
-              <td>dashboard</td>
-              <td>illustrative</td>
-              <td>rich</td>
-            </tr>
-            <tr>
-              <td>1,007</td>
-              <td>placeholder</td>
-              <td>tabular</td>
-              <td>information</td>
-            </tr>
-            <tr>
-              <td>1,008</td>
-              <td>random</td>
-              <td>data</td>
-              <td>placeholder</td>
-            </tr>
-            <tr>
-              <td>1,009</td>
-              <td>placeholder</td>
-              <td>irrelevant</td>
-              <td>visual</td>
-            </tr>
-            <tr>
-              <td>1,010</td>
-              <td>data</td>
-              <td>rich</td>
-              <td>dashboard</td>
-            </tr>
-            <tr>
-              <td>1,011</td>
-              <td>information</td>
-              <td>placeholder</td>
-              <td>illustrative</td>
-            </tr>
-            <tr>
-              <td>1,012</td>
-              <td>text</td>
-              <td>placeholder</td>
-              <td>layout</td>
-            </tr>
-            <tr>
-              <td>1,013</td>
-              <td>dashboard</td>
-              <td>irrelevant</td>
-              <td>text</td>
-            </tr>
-            <tr>
-              <td>1,014</td>
-              <td>dashboard</td>
-              <td>illustrative</td>
-              <td>rich</td>
-            </tr>
-            <tr>
-              <td>1,015</td>
-              <td>random</td>
-              <td>tabular</td>
-              <td>information</td>
-            </tr>
+              <% items.forEach((item, index) => { %>
+                <tr>
+                  <td class="mid"><p><%= index+1 %> </p></td>
+                  <td><img src="<%= '/uploads/images/' + items[index].fileName %>" width="40px" alt=""></td>
+                  <td class="mid"><%= item.name%></td>
+                  <td class="mid"><%= item.price%></td>
+                  <td class="mid"><%= item.itemType%></td>
+                  <td class="mid"><button type="button" class="btn btn-primary">Edit</button></td>
+                  <td class="mid">
+                    <form action="/admin" method="POST">
+                      <div class="item">
+                        <button id="button" name="item_delete" type="submit" class="btn btn-danger" value="<%=item%>">Hapus</button>
+                      </div>
+                    </form>
+                  </td>
+                </tr>
+            <% }) %>
           </tbody>
         </table>
       </div>
@@ -232,7 +153,20 @@
 </div>
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src='/js/sweetalert2.all.min.js'></script>
+    <script src='/js/sweetalert2_delete.js'></script>
 </body>
 </html>
+
+<!-- 
+{
+  item_delete: '{\r\n' +
+    '  _id: new ObjectId("614b170a0d9ee298919e4bd5"),\r\n' +
+    "  name: 'asdasd',\r\n" +
+    '  price: 12323,\r\n' +
+    "  itemType: 'Lure',\r\n" +
+    "  fileName: '1632311050508.png',\r\n" +
+    '  __v: 0\r\n' +
+    '}'
+} -->

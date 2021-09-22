@@ -4,6 +4,7 @@ const https = require('https');
 const mongoose = require('mongoose');
 const multer = require('multer');
 const path = require("path");
+const fs = require("fs")
 const { addAbortSignal } = require('stream');
 
 mongoose.connect('mongodb://localhost:27017/itemsDB', {useNewUrlParser: true});
@@ -113,7 +114,6 @@ app.get("/admin", (req, res) => {
         if (err) {
             console.log(err);
         } else {
-            console.log(itemsFound)
             res.render(__dirname + "/views/admin/index", {
                 items:itemsFound
             });   
@@ -121,15 +121,34 @@ app.get("/admin", (req, res) => {
     });
 });
 
+app.post("/admin", (req, res) => {
+    
+    // delete
+    const arr = req.body.item_delete.split(",");
+    const _id = arr[0].split('"');
+    const fileName = arr[4].split("'")
+    fs.unlink(__dirname + "/public/uploads/images/" + fileName[1], (err) => {
+        if (err) throw err;
+    });
+    Item.findByIdAndRemove({_id : _id[1]}, (err) => {
+        if(err){
+            console.log(err)
+        } else {            
+            console.log("Success");
+            res.redirect('/admin')
+        }
+    })
+})
+
+
+
+
+
 
 app.get("/admin/post", (req, res) => {
     res.render(__dirname + "/views/admin/post")
 });
 
-
-// app.post("/admin/post/", (req, res) => {
-//     const itemName = req.body.itemName;
-// });
 
 app.post('/admin/post', upload.single('photo'), (req, res) => {
     const itemName = req.body.itemName;
@@ -149,8 +168,8 @@ app.post('/admin/post', upload.single('photo'), (req, res) => {
     // setTimeout(() => { 
     //     res.redirect("/admin/post/");
     // }, 2000);
-
 });
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log("Server start at port 3000");

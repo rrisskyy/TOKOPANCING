@@ -492,7 +492,7 @@ li {
     list-style-type: none;
 }
 
-  
+
 @keyframes scale-in-center {
     0% {
       transform: scale(1.2);

@@ -20,6 +20,7 @@ btn.addEventListener('click', () => {
     }).then(() => { 
       location.reload()
   });
-    
+
   }
 })
+
