@@ -109,8 +109,16 @@ app.get("/login", (req, res) => {
 
 
 app.get("/admin", (req, res) => {
-    res.render(__dirname + "/views/admin/index")
-    
+    Item.find({}, (err, itemsFound) => {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log(itemsFound)
+            res.render(__dirname + "/views/admin/index", {
+                items:itemsFound
+            });   
+        };
+    });
 });
 
 

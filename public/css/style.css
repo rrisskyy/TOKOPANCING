@@ -85,6 +85,10 @@ body{
 .img-small {
     width: 150px;
 }
+.navbar-toggler{
+    position: absolute;
+    right: 0;
+}
 /* Navbar */
 .fish{
     z-index: 10;
@@ -104,9 +108,19 @@ body{
     width: 400px;
     border-radius: 20px;
 }
+.right{
+    position: relative;
+    right: 0;
+}
 /* END Navbar */
 
 
+.sign-in{
+    float: right;
+}
+.fa-sign-in-alt {
+    font-size: 40px;
+}
 /* Top Container */
 .top-container, .navbar, .container-left, .container-right{
     user-select:none; /*Supaya tidak bisa di block*/
@@ -131,6 +145,23 @@ body{
     font-weight: 300;
     margin: 20px;
 }
+.btn-container-1 {
+    top:47.5%;
+    right:48%;
+    position: absolute;
+    width: 50px;
+}
+.btn-container-2 {
+    top:47.5%;
+    left:50%;
+    position: absolute;
+    width: 50px;
+}
+
+.bi-person-plus-fill {
+    font-size: 17px;
+}
+
 .waves {
     position:relative;
     width: 100%;
@@ -337,6 +368,7 @@ body{
 
 
 footer{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
     height: 300px;
     width: 100%;
@@ -365,7 +397,7 @@ footer li{
     background-size: cover;
 }
 .sign-in-body {
-    margin: 13% auto 7% auto;
+    margin: 7% auto 7% auto;
     display: flex;
 	justify-content: center;
 	align-items: center;
@@ -382,63 +414,9 @@ footer li{
 	min-height: 480px;
 }
 .form-container {
-	position: absolute;
-	top: 0;
 	height: 100%;
 	transition: all 0.6s ease-in-out;
 }
-
-.sign-in-container {
-	left: 0;
-	width: 50%;
-	z-index: 2;
-}
-.container.right-panel-active .sign-in-container {
-	transform: translateX(100%);
-}
-.overlay-container {
-	position: absolute;
-	top: 0;
-	left: 50%;
-	width: 50%;
-	height: 100%;
-	overflow: hidden;
-	transition: transform 0.6s ease-in-out;
-	z-index: 100;
-}
-.container.right-panel-active .overlay-container{
-	transform: translateX(-100%);
-}
-
-.container.right-panel-active .overlay {
-    transform: translateX(50%);
-}
-
-.overlay-panel {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 0 40px;
-  text-align: center;
-  top: 0;
-  height: 100%;
-  width: 50%;
-  transform: translateX(0);
-  transition: transform 0.6s ease-in-out;
-}
-
-
-.overlay-right {
-  right: 0;
-  transform: translateX(0);
-}
-
-.container.right-panel-active .overlay-right {
-  transform: translateX(20%);
-}
-
 .social-container {
   margin: 20px 0;
 }
@@ -453,21 +431,6 @@ footer li{
   height: 40px;
   width: 40px;
 }
-
-.overlay {
-	background-image: url("../image/large-triangles.svg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: 0 0;
-	color: #FFFFFF;
-	position: relative;
-	left: -100%;
-	height: 100%;
-	width: 200%;
-  	transform: translateX(0);
-	transition: transform 0.6s ease-in-out;
-}
-
 
 .text-masuk {
 	font-size: 14px;
@@ -493,6 +456,7 @@ footer li{
 	font-size: 12px;
 	font-weight: bold;
 	padding: 12px 45px;
+    margin-bottom: 20px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
@@ -602,10 +566,6 @@ li {
     }
 }
 @media only screen and (max-width: 1200px) {
-    .product-logo-items {
-        margin: 20px;
-        width: 100%;
-    }
 }
 @media only screen and (min-width: 992px) {
     .scale-in{

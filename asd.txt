@@ -148,3 +148,10 @@ grid.arrange(g1, g2, nrow = 2)
           <!-- End Slides -->
           <% }) %> 
       <% } %> 
+
+
+
+
+
+
+
