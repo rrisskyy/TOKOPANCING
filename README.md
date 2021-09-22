@@ -1,1 +1,1 @@
-# Latihan Menggunakan Vue, react, aos, Bootstrap, Swiper, dll.
+# Latihan Menggunakan Express, CRUD Mongo DB, react, aos, Bootstrap, Swiper, dll.
