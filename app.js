@@ -121,28 +121,37 @@ app.get("/admin", (req, res) => {
     });
 });
 
-app.post("/admin", (req, res) => {
+app.post("/admin/delete", (req, res) => {
     
     // delete
-    const arr = req.body.item_delete.split(",");
-    const _id = arr[0].split('"');
-    const fileName = arr[4].split("'")
-    fs.unlink(__dirname + "/public/uploads/images/" + fileName[1], (err) => {
-        if (err) throw err;
-    });
-    Item.findByIdAndRemove({_id : _id[1]}, (err) => {
-        if(err){
-            console.log(err)
-        } else {            
-            console.log("Success");
-            res.redirect('/admin')
-        }
-    })
+    if ( req.body.item_delete !== null ){
+        // {
+        //   _id: new ObjectId("6145983b0aab120f36ac55a3"),
+        //   name: 'Daido Reno (1000)',
+        //   price: 130000,
+        //   itemType: 'Reel',
+        //   fileName: '1631950907851.png',
+        //   __v: 0
+        // }
+        // req.body berupa sebuah array seperti diatas (bukan sebuah object), maka akan dipisah dengan split(",")
+        const arr = req.body.item_delete.split(",");
+        // _id berada di index 0, dan dipisah lagi, dengan menggunakan split('"'),
+        // karena string yang diinginkan berada di index ke 1, maka itu yg dipilih berlaku juga untuk filename
+        const _id = arr[0].split('"');
+        const fileName = arr[4].split("'")
+        fs.unlink(__dirname + "/public/uploads/images/" + fileName[1], (err) => {
+            if (err) throw err;
+        });
+        Item.findByIdAndRemove({_id : _id[1]}, (err) => {
+            if(err){
+                console.log(err)
+            } else {            
+                console.log("Success");
+                res.redirect('/admin')
+            }
+        })
+    }
 })
-
-
-
-
 
 
 app.get("/admin/post", (req, res) => {
@@ -164,12 +173,7 @@ app.post('/admin/post', upload.single('photo'), (req, res) => {
         fileName: photoName
     });
     item.save()
-
-    // setTimeout(() => { 
-    //     res.redirect("/admin/post/");
-    // }, 2000);
 });
-
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log("Server start at port 3000");

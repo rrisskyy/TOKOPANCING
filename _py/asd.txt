@@ -155,3 +155,116 @@ grid.arrange(g1, g2, nrow = 2)
 
 
 
+<div class="item">
+                        <div class="edit">
+                          <div type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <button name="item_edit" class="btn btn-primary text-end">Edit</button>
+                          </div>
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">
+                                    <h2 class="navbar-brand-text text-warning">Toko <span class="pt-2 ps-2 text-info pancing">Pancing</span></h2>
+                                  </h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body"> 
+                                      <form action="#" method="POST" class="text-left">
+                                        <label for="itemID"><p class="text-center">UID</p></label>
+                                        <input id="itemID" class="form-control mt-1" type="text" placeholder="UID" aria-label="default input example" value="<%= item._id %>" disabled>
+                                        
+                                        <div>
+                                          <img src="<%= '/uploads/images/' + item.fileName %>" width="100px" alt="">
+                                        </div>
+                                        <label for="itemPhoto" class="mt-3"><p>Photo</p></label>
+                                        <input id="itemPhoto" name="photo" class="form-control mt-1" type="file" placeholder="Ubah Gambar" aria-label="default input example">
+
+                                        <label for="itemName" class="mt-3"><p>Nama Barang</p></label>
+                                        <input id="itemName" name="itemName" class="form-control mt-1" type="text" placeholder="Nama Barang" aria-label="default input example"value="<%= item.name%>">
+                                        
+                                        <label for="price" class="mt-3"><p>Harga</p></label>
+                                        <input id="price" name="price" class="form-control mt-1" type="text" placeholder="Harga" aria-label="default input example" value="<%= item.price%>">
+                                        
+                                        <label for="itemCategory" class="mt-3"><p>Kategori</p></label>
+                                        <select class="form-select mt-1" aria-label="Default select example" name="itemType">
+                                          <option value="<%= item.itemType %>" selected>Pilih Kategori</option>
+                                          <option value="Joran">Joran</option>
+                                          <option value="Reel">Reel</option>
+                                          <option value="Lure">Lure</option>
+                                          <option value="Hook">Mata Pancing</option>
+                                          <option value="Nylon">Senar Nylon</option>                
+                                          <option value="Timah_Pemberat">Timat Pemberat</option>
+                                          <option value="Kili_Kili">Kili - Kili</option>
+                                          <option value="Snap">Snap</option>
+                                          <option value="Lainnya">Lainnya</option>
+                                        </select>
+                                        <button type="submit" class="btn-sign mt-3">Save</button>
+                                      </form>
+                                    </div>
+                                  </div>
+                                </div>
+                          </div>
+                      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"> -->
+                        <button name="item_edit" id="btn_edit" class="btn btn-primary text-end">Edit</button>
+                        </div>
+                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">
+                                <h2 class="navbar-brand-text text-warning">Toko <span class="pt-2 ps-2 text-info pancing">Pancing</span></h2>
+                              </h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"> 
+                                  <form action="/admin" method="POST" class="text-left">
+                                    <label for="itemID"><p class="text-center">UID</p></label>
+                                    <input id="itemID" class="form-control mt-1" type="text" placeholder="UID" aria-label="default input example" value="<%= item._id %>" disabled>
+                                    
+                                    <div class="text-center">
+                                      <img src="<%= '/uploads/images/' + item.fileName %>" width="170px" alt="">
+                                    </div>
+                                    <h5 class="text-danger">Gambar tidak dapat diubah!</h5>
+
+                                    <label for="itemName" class="mt-3"><p>Nama Barang</p></label>
+                                    <input id="itemName" name="itemName" class="form-control mt-1" type="text" placeholder="Nama Barang" aria-label="default input example"value="<%= item.name%>">
+                                    
+                                    <label for="price" class="mt-3"><p>Harga</p></label>
+                                    <input id="price" name="price" class="form-control mt-1" type="text" placeholder="Harga" aria-label="default input example" value="<%= items[4].price%>">
+                                    
+                                    <label for="itemCategory" class="mt-3"><p>Kategori</p></label>
+                                    <select class="form-select mt-1" aria-label="Default select example" name="itemType">
+                                      <option value="<%= item.itemType %>" selected>Pilih Kategori</option>
+                                      <option value="Joran">Joran</option>
+                                      <option value="Reel">Reel</option>
+                                      <option value="Lure">Lure</option>
+                                      <option value="Hook">Mata Pancing</option>
+                                      <option value="Nylon">Senar Nylon</option>                
+                                      <option value="Timah_Pemberat">Timat Pemberat</option>
+                                      <option value="Kili_Kili">Kili - Kili</option>
+                                      <option value="Snap">Snap</option>
+                                      <option value="Lainnya">Lainnya</option>
+                                    </select>
+                                    <button type="submit" class="btn-sign mt-3">Save</button>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                      </div>
+                  </div>

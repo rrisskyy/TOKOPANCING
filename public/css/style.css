@@ -82,6 +82,13 @@ body{
 .bg-lightblue {
     background-color: #f5f5ff;
 }
+
+.img-crop-40px {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
 .img-small {
     width: 150px;
 }
