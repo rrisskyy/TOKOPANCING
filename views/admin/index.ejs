@@ -69,7 +69,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   <span data-feather="users"></span>
-                  Pelanggan
+                  Data Pelanggan
                 </a>
               </li>
               <li class="nav-item">
@@ -138,7 +138,7 @@
                   <td class="mid">
                     <form action="/admin/delete" method="POST">
                       <div class="item">
-                        <button id="button" name="item_delete" type="submit" class="btn btn-transparent" value="<%=item%>" confirm("Press a button!\nEither OK or Cancel.")><i class="bi bi-trash-fill text-danger fs-3"></i></button>
+                        <button id="button" name="item_delete" type="submit" class="btn btn-transparent" value="<%=item%>"><i class="bi bi-trash-fill text-danger fs-3"></i></button>
                       </div>
                     </form>
                   </td>
@@ -156,7 +156,7 @@
     <script src='/js/sweetalert2.all.min.js'></script>
     <script src='/js/sweetalert2_delete.js'></script>
     <script>
-      let btn_edit = document.querySelector('#btn_edit').addEventListener('click', () => {
+      let btn_delete = document.querySelector('#button').addEventListener('click', () => {
         console.log("OK");
       })
     </script>
