@@ -292,6 +292,55 @@
 </div>
 
 
+<div class="row container-right">
+  <div class="col-md-3 m-auto" data-aos="fade-left" data-aos-delay="700" data-aos-duration="400" data-aos-offset="150">
+    <div class="bg-dark">
+      <h2 class="text-primary poppins title-right text-items">Reel</h2>
+    </div>
+  </div>
+  <div class="col-md-9" data-aos="fade-left" data-aos-delay="400" data-aos-duration="700" data-aos-offset="350">
+    <!-- Slider main container -->
+    <section class="container-fluid" id="reel">
+      <div class="swiper">
+        <!-- Additional required wrapper -->        
+        <h2 class="text-primary poppins title-right">&nbsp</h2>
+        <div class="clear"></div>
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <% itemsCategories[3].forEach((item) => { %> 
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="<%= '/uploads/images/' + item.fileName %> " class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2><%= item.name %></h2>
+                            <hr>
+                            <p>Rp. <%= item.price %></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          <% }) %>
+          <!-- End Slides -->
+
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+
 <div class="container-fluid">
   <h2 class="best pb-3 comment-header" data-aos="fade-up" data-aos-delay="350" data-aos-duration="1000">Apa yang Dikatakan Customer Kami</h2>
   <div class="swiper1" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1200">
