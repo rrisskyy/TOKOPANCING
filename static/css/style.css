@@ -561,6 +561,9 @@ li {
 }
   
 @media only screen and (min-width: 1200px) {
+    .margin-kiri-3 {
+        margin-left: 15px;
+    }
     .middle-container{
         margin-top:100px;
     }
@@ -592,37 +595,35 @@ li {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 976px) {
     .top-container{
         margin-top: 0;    
         background-position-x: -400px;
     }
     .top-container h1{
-        font-size: 70px;
+        font-size: 40px;
     }
     .top-container h5{
-        margin-top:-10px;
-        margin-left: 0px;
+        margin-top: 40px;
+        width: 250px;
+        margin-bottom: 40px;
+    }
+    .img-phone {
+        width: 35%;
+        position: absolute;
+        top: 9%;
+        right: 5%;
     }
     .container-symbol{
-        margin: -90px 0 50px 0;
-    }
-    .overlay-container{
-        display: none;
-    }
-    .sign-in-container {
-        width: 100%;
+        margin: 0 0 50px 0;
     }
     .waves {
         height:40px;
         min-height:40px;
     }
-    .show-card{
-        display: none;
-    }
 }
 @media only screen and (max-width: 522px) {
     .top-container h1{
-        font-size: 65px;
+        font-size: 37px;
     }
 }
