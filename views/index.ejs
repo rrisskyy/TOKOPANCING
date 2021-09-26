@@ -126,27 +126,60 @@
     <section class="container mt-5">
       <h2 class="title-poppins text-center text-primary" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000" data-aos-offset="170">BEST SELLER</h2>
       <div class="row" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000" data-aos-offset="250">
-        <% for(let i = 0; i < items.length; i++){ %> 
-        <% if (i === 0 || i === 4 || i === 12){ %> 
+<!-- 1 -->
           <div class="col-lg-4 col-md-3 mt-4 best-items">
             <div class="card scaled-card">
               <div class="crown-position"><i class="fas fa-crown position-absolute crown text-primary"></i></div>
               <div class="card-container">
                 <div class="top text-center">
-                  <img src="<%= '/uploads/images/' + items[i].fileName %> " class="imgBig" alt="">
+                  <img src="<%= '/uploads/images/' + items[1].fileName %> " class="imgBig" alt="">
                 </div>
                 <div class="bottom">
                   <div class="details">
-                    <h2><%= items[i].name %></h2>
+                    <h2><%= items[1].name %></h2>
                     <hr>
-                    <p>Rp. <%= items[i].price %></p>
+                    <p>Rp. <%= items[1].price %></p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <% }; %> 
-        <% };%> 
+<!-- 2 -->
+          <div class="col-lg-4 col-md-3 mt-4 best-items">
+            <div class="card scaled-card">
+              <div class="crown-position"><i class="fas fa-crown position-absolute crown text-primary"></i></div>
+              <div class="card-container">
+                <div class="top text-center">
+                  <img src="<%= '/uploads/images/' + items[4].fileName %> " class="imgBig" alt="">
+                </div>
+                <div class="bottom">
+                  <div class="details">
+                    <h2><%= items[4].name %></h2>
+                    <hr>
+                    <p>Rp. <%= items[4].price %></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<!-- 1 -->
+          <div class="col-lg-4 col-md-3 mt-4 best-items">
+            <div class="card scaled-card">
+              <div class="crown-position"><i class="fas fa-crown position-absolute crown text-primary"></i></div>
+              <div class="card-container">
+                <div class="top text-center">
+                  <img src="<%= '/uploads/images/' + items[0].fileName %> " class="imgBig" alt="">
+                </div>
+                <div class="bottom">
+                  <div class="details">
+                    <h2><%= items[0].name %></h2>
+                    <hr>
+                    <p>Rp. <%= items[0].price %></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
     </section>
     <!-- End Best -->
@@ -436,6 +469,7 @@
     <img src="/image/tnw.png" alt="tnw-logo" width="150px" class="pe-3">
     <img src="/image/bizinsider.png" alt="biz-insider-logo" width="150px" class="pe-3">
     <img src="/image/mashable.png" alt="mashable-logo" width="150px" class="pe-3">
+    <span class="text-secondary pt-1">(just as a filler so it's not empty)</span>
   </section>
 </div>
 <%-include("partials/footer.ejs")-%>

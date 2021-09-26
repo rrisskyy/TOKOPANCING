@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Alat Pancing</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+      
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-light navbar-expand-xl bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="ps-3 pe-3 navbar-brand" href="#"><img src="image/fish.png" alt="" class="fish"></a>
+      <h2 class="navbar-brand-text text-warning">Toko <span class="pt-2 ps-2 text-info pancing">Pancing</span></h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><h2 class="navbar-brand-text text-warning">Toko <span class="pt-3 ps-2 text-info">Pancing</span></h2></h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item pe-3">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item pe-3">
+              <a class="nav-link" href="https://goo.gl/maps/LiAjooGvsMRYEFHSA" target="_blank">Lokasi</a>
+            </li>
+            <li class="nav-item pe-3">
+              <a class="nav-link" href="" title="Pemberitahuan" data-bs-content="Mohon Maaf Fitur Belum Tersedia Saat ini">Hubungi Kami</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control search me-1" type="search" placeholder="Cari di toko ini..." aria-label="Search">
+            <button class="btn btn-transparent" type="submit"><i class="fas fa-search text-warning"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+</nav>
+<!-- End Navbar -->
+
+<!-- Top Container -->
+<div class="top-container">
+  <!-- Sign in Modal -->
+  <div class="sign-in">
+    <div type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <i class="fas fa-sign-in-alt text-warning"></i>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              <h2 class="navbar-brand-text text-warning">Toko <span class="pt-2 ps-2 text-info pancing">Pancing</span></h2>
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body"> 
+                <form action="#" method="POST" class="form-login">
+                  <div class="social-container">
+                    <a href="#" class="social anchor "><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social anchor"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social anchor"><i class="fab fa-twitter"></i></a>
+                  </div>
+                  <span class="your-acc">atau gunakan akunmu</span>
+                  <input type="username" placeholder="Username" class="input"/>
+                  <input type="password" placeholder="Password" class="input"/>
+                  <a href="#" class="anchor">Lupa Password?</a>
+                  <button type="submit" class="btn-sign">Sign In</button>
+                </form>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+  <!-- End Sign in -->
+
+  <!-- Headline -->
+  <div class="container">
+      <div class="row">
+          <div class="col pb-5 scale-in">
+            <h1 class="text-light"> Toko Alat Pancing </h1>
+            <h5 class="text-light"><i class="fas fa-map-marker-alt"></i> Jl Ulin RT 10, Sebulu Ulu, Kec. Sebulu, Kab. Kutai Kartanegara,<br><span class="ms-3"> Kalimantan Timur</h5>  
+            
+            <div class="container container-symbol">
+              <div class="row">
+                <div class="col"><i class="fas fa-store pe-2 pt-5 text-white produk"></i> <span class="text-white "> Total <span class="pe-1">Produk:</span><span class="text-white fst-italic">120</span></span></div>
+                <div class="col"><i class="fas fa-user-check pe-2 pt-5 text-white"></i> <span class="text-white "> Berdiri Sejak: <span class="text-white fst-italic"> 2017</span></span></div>
+              </div>
+              <div class="row">
+                <div class="col"><i class="fas fa-users pe-2 pt-5 text-white"></i> <span class="text-white "> Pengikut: <span class="text-white fst-italic"> 19.3RB</span></span></div>
+                <div class="col"><i class="fas fa-user pe-2 pt-5 text-white"></i> <span class="text-white "> Mengikuti: <span class="text-white fst-italic"> 4.3RB</span></span></div>
+              </div>
+              <div class="row">
+                <div class="col"><i class="fas fa-comment-dots pe-2 pt-5 text-white"></i> <span class="text-white "> Performa Chat: <span class="text-white fst-italic"> 99% (Hitungan Jam)</span></span></div>
+                <div class="col"><i class="far fa-star pe-2 pt-5 text-white"></i> <span class="text-white "> Rating: <span class="text-white fst-italic"> 4.9 (18.2RB Penilaian)</span></span></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col text-center scale-in">
+            <div class="container-img">
+              <img src="image/phone.png" class="img-phone" alt="">
+              <div class="btn-container-1 img-phone">
+                <a type="button" class="btn"><i class="bi bi-chat-dots-fill text-black"></i></a>
+              </div>
+            </div>
+            <div class="btn-container-2 img-phone">
+              <a type="button" class="btn"><i class="bi bi-person-plus-fill text-black"></i></a>
+            </div>
+          </div>
+      </div>
+  </div>    
+  <!-- End Headline -->
+
+  <!--Waves-->
+  <div class="waves">
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+    </g>
+    </svg>
+  </div>
+  <!--Waves end-->
+</div>
+<!--End Top Container -->
+
+<!-- Middle Container -->
+<div class="middle-container">
+
+  <!-- Tentang Toko -->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="250">
+        <img src="image/fishing-desc.png" width="80%" alt="" >
+      </div>
+      <div class="col-sm" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-offset="250">
+        <h2 class="text-center title-poppins text-primary text-upper fs-25px">Tentang Toko</h2>
+        <p class="font-sans-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quibusdam atque iste vero odio sunt nesciunt ea itaque, esse aut? Fugiat, expedita ex minus et nesciunt adipisci quidem enim impedit, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, pariatur iste. Id eos, aspernatur in omnis minima tempora voluptates ratione fuga deleniti ad consectetur, veritatis impedit officiis vitae quasi laboriosam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae sed culpa accusamus perferendis. Sed, voluptatibus nam itaque ipsam corporis, omnis veniam voluptatum quisquam quas accusamus aperiam tempore mollitia similique! Reiciendis.</p>
+      </div>
+    </div>
+  </div>
+  <!-- End Tentang Toko -->
+
+  <!-- Kategori -->
+  <div class="container product-logo-container" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="250">
+    <h3 class="product-logo-title-2 text-secondary">Kategori</span></h3>
+    <h2 class="title-poppins text-primary text-upper">Lihat Kategori</h2>
+  </div>
+  <div class="container-fluid bg-lightblue pb-3">
+    <div class="container p-0">
+      <div class="container">
+        <div class="row m-auto pe-3 d-flex justify-content-evenly">
+            <a href="#joran" class="col-lg-3 col-md-4 mt-4 text-center btn bg-white m-1" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="900" data-aos-offset="200"><img src="image/1.png" alt=""></a>
+            <a href="#reel" class="col-lg-3 col-md-4 mt-4 text-center btn bg-white m-1" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="900" data-aos-offset="200"><img src="image/2.png" alt=""></a>
+            <a href="#lure" class="col-lg-3 col-md-4 mt-4 text-center btn bg-white m-1" data-aos="zoom-in" data-aos-delay="600" data-aos-duration="900" data-aos-offset="200"><img src="image/3.png" alt=""></a>
+            <a href="#lure" class="col-lg-3 col-md-4 mt-4 text-center btn bg-white m-1" data-aos="zoom-in" data-aos-delay="800" data-aos-duration="900" data-aos-offset="130"><img src="image/5.png" alt=""></a>
+            <a href="#" class="col-lg-3 col-md-4 mt-4 text-center btn bg-white m-1" data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="900" data-aos-offset="130"><img src="image/4.png" alt=""></a>
+            <a href="#" class="col-lg-3 col-md-4 mt-4 text-center btn bg-white m-1" data-aos="zoom-in" data-aos-delay="1200" data-aos-duration="900" data-aos-offset="130"><img src="image/soon.png" alt=""></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Kategori -->
+
+  <!-- Best -->
+  <section class="container mt-5">
+    <h2 class="title-poppins text-center text-primary" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000" data-aos-offset="170">BEST SELLER</h2>
+    <div class="row" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000" data-aos-offset="250">
+  <!-- 1 -->
+        <div class="col-lg-4 col-md-3 mt-4 best-items">
+          <div class="card scaled-card">
+            <div class="crown-position"><i class="fas fa-crown position-absolute crown text-primary"></i></div>
+            <div class="card-container">
+              <div class="top text-center">
+                <img src="items_image/1.png" class="imgBig" alt="">
+              </div>
+              <div class="bottom">
+                <div class="details">
+                  <h2>Reel BC Fugu Taru 17+1 Bearings System Left</h2>
+                  <hr>
+                  <p>Rp. 310.000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  <!-- 2 -->
+        <div class="col-lg-4 col-md-3 mt-4 best-items">
+          <div class="card scaled-card">
+            <div class="crown-position"><i class="fas fa-crown position-absolute crown text-primary"></i></div>
+            <div class="card-container">
+              <div class="top text-center">
+                <img src="items_image/17.png" class="imgBig" alt="">
+              </div>
+              <div class="bottom">
+                <div class="details">
+                  <h2>Joran Katana Fiber SDA 180cm</h2>
+                  <hr>
+                  <p>Rp. 110.000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  <!-- 1 -->
+        <div class="col-lg-4 col-md-3 mt-4 best-items">
+          <div class="card scaled-card">
+            <div class="crown-position"><i class="fas fa-crown position-absolute crown text-primary"></i></div>
+            <div class="card-container">
+              <div class="top text-center">
+                <img src="items_image/5.png" class="imgBig" alt="">
+              </div>
+              <div class="bottom">
+                <div class="details">
+                  <h2>Reel BC Fugu Taru 17+1 Bearings System Left</h2>
+                  <hr>
+                  <p>Rp. 310.000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- End Best -->
+
+
+  <!-- Joran -->
+  <div class="row">
+    <div class="col-md-9" data-aos="fade-right" data-aos-delay="400" data-aos-duration="700" data-aos-offset="350">
+    <!-- Slider main container -->
+    <section class="container-fluid" id="joran">
+      <div class="swiper">
+        <!-- Additional required wrapper -->        
+        <h2 class="text-primary poppins">&nbsp</h2>
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="items_image/17.png" class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2>Joran Katana Fiber SDA 180cm</h2>
+                            <hr>
+                            <p>Rp. 110.000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="items_image/18.png" class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2>Joran BC Daido Tomman 180cm</h2>
+                            <hr>
+                            <p>Rp. 250.000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="items_image/19.png" class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2>Joran Kaizen Fiber Python 150cm</h2>
+                            <hr>
+                            <p>100.000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="items_image/20.png" class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2>Joran Iroly Beset Spin 180cm</h2>
+                            <hr>
+                            <p>100.000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="items_image/21.png" class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2>Joran Surf Ruas Pendek Length 240</h2>
+                            <hr>
+                            <p>70.000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="items_image/21.png" class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2>Joran Surf Ruas Pendek Length 270</h2>
+                            <hr>
+                            <p>80.000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="items_image/21.png" class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2>Joran Surf Ruas Pendek Length 300</h2>
+                            <hr>
+                            <p>85.000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="items_image/21.png" class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2>Joran Surf Ruas Pendek Length 360</h2>
+                            <hr>
+                            <p>100.000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="items_image/21.png" class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2>Joran Surf Ruas Pendek Length 450</h2>
+                            <hr>
+                            <p>130.000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          <!-- End Slides -->
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+    </div>
+    <div class="col-md-3 m-auto" data-aos="fade-right" data-aos-delay="700" data-aos-duration="400" data-aos-offset="150">
+      <h2 class="text-primary poppins text-items">Joran</h2>
+    </div>
+  </div>
+  <!-- End Joran -->
+
+  <!-- Reel -->
+  <div class="row">
+    <div class="col-md-3 m-auto" data-aos="fade-left" data-aos-delay="700" data-aos-duration="400" data-aos-offset="150">
+      <div class="bg-dark">
+        <h2 class="text-primary poppins title-right text-items">Reel</h2>
+      </div>
+    </div>
+    <div class="col-md-9" data-aos="fade-left" data-aos-delay="400" data-aos-duration="700" data-aos-offset="350">
+    <!-- Slider main container -->
+    <section class="container-fluid" id="reel">
+      <div class="swiper">
+        <!-- Additional required wrapper -->        
+        <h2 class="text-primary poppins title-right">&nbsp</h2>
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="items_image/1.png" class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2>Reel BC Fugu Taru 17+1 Bearings System Left</h2>
+                            <hr>
+                            <p>Rp. 310.000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="items_image/2.png" class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2>Reel BC Lizard Lure Killer 7:2:1 Left</h2>
+                            <hr>
+                            <p>Rp. 210.000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="items_image/3.png" class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2>Reel Fugu Aojiro (6000) 10 Ball Bearings</h2>
+                            <hr>
+                            <p>Rp. 150.000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="items_image/4.png" class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2>Reel Daido Reno (4000) 6 Ball Bearings</h2>
+                            <hr>
+                            <p>Rp. 138.000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="items_image/5.png" class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2>Reel BC Fugu Taru 17+1 Bearings System Left</h2>
+                            <hr>
+                            <p>Rp. 310.000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="items_image/6.png" class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2>Reel Kaizen Oishi (4000) 3 Ball Bearings 5.1:1</h2>
+                            <hr>
+                            <p>Rp. 138.000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="items_image/7.png" class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2>Daido Tsunami (4000) 6 Ball Bearings 4.7:1</h2>
+                            <hr>
+                            <p>Rp. 138.000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="items_image/8.png" class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2>Reel Daido Zodias (2000) 6 Ball Bearings 4.7:1</h2>
+                            <hr>
+                            <p>Rp. 125.000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="items_image/9.png" class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2>Reel Daido Reno (2000) 6 Ball Bearings 4.7:1</h2>
+                            <hr>
+                            <p>Rp. 125.000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="items_image/10.png" class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2>Reel Kaizen Haruki (2000) 3 Ball Bearings 5.1:1</h2>
+                            <hr>
+                            <p>Rp. 145.000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="items_image/11.png" class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2>Reel Daido Zodias (4000) 6 Ball Bearings 4.7:1</h2>
+                            <hr>
+                            <p>Rp. 138.000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="items_image/12.png" class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2>Reel Kaizen Gin (4000) 3 Ball Bearings 5.1:1</h2>
+                            <hr>
+                            <p>Rp. 180.000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="items_image/13.png" class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2>Reel Kaizen Gin (2000) 3 Ball Bearings 5.1:1</h2>
+                            <hr>
+                            <p>Rp. 160.000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="items_image/14.png" class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2>Reel Daido Zodias (6000) 6 Ball Bearings 4.7:1</h2>
+                            <hr>
+                            <p>Rp. 162.000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="items_image/15.png" class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2>Reel Daido Reno (1000) 3 Ball Bearings 5.1:1</h2>
+                            <hr>
+                            <p>Rp. 120.000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="items_image/16.png" class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2>Reel Daido Fino Max (250) 5 Ball Bearings 5.2:1</h2>
+                            <hr>
+                            <p>Rp. 75.000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          <!-- End Slides -->
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    </div>
+  </div>
+  <!-- End Reel -->
+
+
+  <!-- Lure -->
+  <div class="row">
+    <div class="col-md-9" data-aos="fade-right" data-aos-delay="400" data-aos-duration="700" data-aos-offset="350">
+    <!-- Slider main container -->
+    <section class="container-fluid" id="lure">
+      <div class="swiper">
+        <!-- Additional required wrapper -->        
+        <h2 class="text-primary poppins">&nbsp</h2>
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="items_image/22.png" class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2>Jump Frog</h2>
+                            <hr>
+                            <p>Rp. 48000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="items_image/23.png" class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2>Soft Frog Lure</h2>
+                            <hr>
+                            <p>Rp. 30.000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="items_image/24.png" class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2>Hard Frog Lure</h2>
+                            <hr>
+                            <p>Rp. 28.000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="items_image/25.png" class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2>Soft Frog Lure</h2>
+                            <hr>
+                            <p>Rp. 32.000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="items_image/26.png" class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2>Soft Frog Lure</h2>
+                            <hr>
+                            <p>Rp. 30.000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="items_image/27.png" class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2>Soft Frog Lure</h2>
+                            <hr>
+                            <p>Rp. 32.000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="items_image/28.png" class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2>Soft Frog Lure</h2>
+                            <hr>
+                            <p>Rp. 24.000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                  <div class="col-lg-4 col-md-3 mt-4 best-items">
+                    <div class="card-md">
+                      <div class="card-container">
+                        <div class="top text-center">
+                          <img src="items_image/29.png" class="imgBig" alt="">
+                        </div>
+                        <div class="bottom">
+                          <div class="details-md">
+                            <h2>Soft Frog Lure</h2>
+                            <hr>
+                            <p>Rp. 25.000</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          <!-- End Slides -->
+
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+    </div>
+    <div class="col-md-3 text-bottom" data-aos="fade-right" data-aos-delay="700" data-aos-duration="400" data-aos-offset="150">
+    <h2 class="text-primary poppins text-items">Lure</h2>
+    <!-- <img src="/image/frog.png" alt="" class="img-items"> -->
+    </div>
+  </div>
+  <!-- End Lure -->
+
+  <!-- Mata Pancing -->
+  <div class="row">
+    <div class="col-md-3 m-auto" data-aos="fade-left" data-aos-delay="700" data-aos-duration="400" data-aos-offset="150">
+      <div class="bg-dark">
+        <h2 class="text-primary poppins title-right text-items">Mata Pancing</h2>
+      </div>
+    </div>
+    <div class="col-md-9" data-aos="fade-left" data-aos-delay="400" data-aos-duration="700" data-aos-offset="350">
+    <!-- Slider main container -->
+      <section class="container-fluid" id="reel">
+        <div class="swiper">
+          <!-- Additional required wrapper -->        
+          <h2 class="text-primary poppins title-right">&nbsp</h2>
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="row">
+                    <div class="col-lg-4 col-md-3 mt-4 best-items">
+                      <div class="card-md">
+                        <div class="card-container">
+                          <div class="top text-center">
+                            <img src="items_image/30.png" class="imgBig" alt="">
+                          </div>
+                          <div class="bottom">
+                            <div class="details-md">
+                              <h2>Mata Pancing Kaizen Akitakitsune</h2>
+                              <hr>
+                              <p>Rp. 8.000</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row">
+                    <div class="col-lg-4 col-md-3 mt-4 best-items">
+                      <div class="card-md">
+                        <div class="card-container">
+                          <div class="top text-center">
+                            <img src="items_image/31.png" class="imgBig" alt="">
+                          </div>
+                          <div class="bottom">
+                            <div class="details-md">
+                              <h2>Mata Pancing Kaizen Chinu</h2>
+                              <hr>
+                              <p>Rp. 8.000</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row">
+                    <div class="col-lg-4 col-md-3 mt-4 best-items">
+                      <div class="card-md">
+                        <div class="card-container">
+                          <div class="top text-center">
+                            <img src="items_image/32.png" class="imgBig" alt="">
+                          </div>
+                          <div class="bottom">
+                            <div class="details-md">
+                              <h2>Mata Pancing Carbon Charm 1054 & 1053 1-13</h2>
+                              <hr>
+                              <p>Rp. 7.000</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row">
+                    <div class="col-lg-4 col-md-3 mt-4 best-items">
+                      <div class="card-md">
+                        <div class="card-container">
+                          <div class="top text-center">
+                            <img src="items_image/33.png" class="imgBig" alt="">
+                          </div>
+                          <div class="bottom">
+                            <div class="details-md">
+                              <h2>Mata Pancing Carbon Plus 1130L 1-13</h2>
+                              <hr>
+                              <p>Rp. 7.000</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row">
+                    <div class="col-lg-4 col-md-3 mt-4 best-items">
+                      <div class="card-md">
+                        <div class="card-container">
+                          <div class="top text-center">
+                            <img src="items_image/34.png" class="imgBig" alt="">
+                          </div>
+                          <div class="bottom">
+                            <div class="details-md">
+                              <h2>Mata Pancing Owner Unagi  1 - 20</h2>
+                              <hr>
+                              <p>Rp. 28.000</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row">
+                    <div class="col-lg-4 col-md-3 mt-4 best-items">
+                      <div class="card-md">
+                        <div class="card-container">
+                          <div class="top text-center">
+                            <img src="items_image/35.png" class="imgBig" alt="">
+                          </div>
+                          <div class="bottom">
+                            <div class="details-md">
+                              <h2>Mata Pancing Carbon Mix 1-17</h2>
+                              <hr>
+                              <p>Rp. 7.000</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            <!-- End Slides -->
+
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <!-- End Mata Pancing -->
+
+
+
+
+<div class="container-fluid">
+<h2 class="best pb-3 comment-header" data-aos="fade-up" data-aos-delay="350" data-aos-duration="1000">Apa yang Dikatakan Customer Kami</h2>
+<div class="swiper1" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1200">
+<div class="swiper-wrapper">
+  <div class="swiper-slide">
+    <div class="testimonial">
+      <div class="comment text-center pt-5">
+        <img src="image/person-1.jpg" class="rounded-circle img-small" alt="">
+        <p class="pt-5 container-sm"><i class="bx bxs-quote-alt-left quote-icon-left"></i>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ad inventore adipisci ipsum repellendus fuga atque, laudantium vero ipsa illum praesentium itaque maiores, minima quidem possimus! Corporis molestias pariatur ab.
+          <i class="bx bxs-quote-alt-right quote-icon-right"></i></p>
+        <p class="pt-3 text-secondary">Asta</p>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-slide">
+    <div class="testimonial">
+      <div class="comment text-center pt-5">
+        <img src="image/person-2.jpg" class="rounded-circle img-small" alt="">
+        <p class="pt-5 container-sm"><i class="bx bxs-quote-alt-left quote-icon-left"></i>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ad inventore adipisci ipsum repellendus fuga atque, laudantium vero ipsa illum praesentium itaque maiores, minima quidem possimus! Corporis molestias pariatur ab.
+          <i class="bx bxs-quote-alt-right quote-icon-right"></i></p>
+        <p class="pt-3 text-secondary">Ichigo</p>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-slide">
+    <div class="testimonial">
+      <div class="comment text-center pt-5">
+        <img src="image/person-3.jpg" class="rounded-circle img-small" alt="">
+        <p class="pt-5 container-sm"><i class="bx bxs-quote-alt-left quote-icon-left"></i>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ad inventore adipisci ipsum repellendus fuga atque, laudantium vero ipsa illum praesentium itaque maiores, minima quidem possimus! Corporis molestias pariatur ab.
+          <i class="bx bxs-quote-alt-right quote-icon-right"></i></p>
+        <p class="pt-3 text-secondary">Midoriya</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- dev -->
+<div class="container text-center pb-5 pt-5">
+<section id="press">
+<div class="row">
+  <div class="col-md-3">
+    <img src="image/techcrunch.png" alt="tc-logo" width="150px" class="pe-3">
+  </div>
+  <div class="col-md-3">
+    <img src="image/tnw.png" alt="tnw-logo" width="150px" class="pe-3">
+  </div>
+  <div class="col-md-3">
+    <img src="image/bizinsider.png" alt="biz-insider-logo" width="150px" class="pe-3">
+  </div>
+  <div class="col-md-3">
+    <img src="image/mashable.png" alt="mashable-logo" width="150px" class="pe-3">
+  </div>
+</div>
+<span class="text-secondary pt-1">(just as a filler so it's not empty)</span>
+</section>
+</div>
+
+  <footer class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="footer-left">
+            <div class="w-10">
+              <h2 class="navbar-brand-text text-warning pt-5">Toko <span class="pt-2 ps-2 text-info pancing">Pancing</span></h2>
+              <p class="text-black-50 pt-3"><span class="d-block">Toko Alat Pancing</span> <span class="d-block">Jl. Ulin No.68, Sebulu Ulu, <span class="d-block">Kec. Sebulu, Kab. Kutai Kartanegara</span>  Kalimantan Timur 75552</p>
+              <p class="text-black-50 pt-4 pb-4">&copy 2021 Risky Kurniawan</p>  
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="footer-right fs-1">
+            <div class="row">
+              <a class="col pe-5 fab fa-github text-decoration-none text-secondary" href="https://github.com/rrisskyy"></a>
+              <a class="col pe-5 fab fa-instagram text-decoration-none text-secondary" href="https://www.instagram.com/rrisskyy/"></a>
+              <a class="col pe-5 fab fa-whatsapp text-decoration-none text-secondary" href="http://wa.me/6282158317722"></a>
+              <a class="col pe-5 fab fa-facebook text-decoration-none text-secondary" href="https://web.facebook.com/rrisskyy/"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  </footer>
+      <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+      <script src="js/swiper-bundle.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+      <script>
+            AOS.init({
+              offset: 120,
+              once:true,
+              duration: 1000,
+              easing: 'ease-in-out',
+              mirror: false
+            })
+        </script>
+      <script src="js/script.js"></script>
+</body>
+</html>
