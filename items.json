@@ -1,0 +1,415 @@
+[{
+  "_id": {
+    "$oid": "61436aae43c8ad9f1a49b682"
+  },
+  "name": "Reel BC Fugu Taru 17+1 Bearings System Left",
+  "price": 310000,
+  "itemType": "Reel",
+  "fileName": "8ac1b29e1c6a748611b62f528f717466.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6143f698c422f8ae0ae00ad8"
+  },
+  "name": "Reel BC Lizard Lure Killer 7:2:1 Left",
+  "price": 205000,
+  "itemType": "Reel",
+  "fileName": "1631843992747.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6143f8fcc422f8ae0ae00af2"
+  },
+  "name": "Reel Fugu Aojiro (6000) 10 Ball Bearings",
+  "price": 150000,
+  "itemType": "Reel",
+  "fileName": "1631844604297.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "614406eb2478bea9d3f8fe61"
+  },
+  "name": "Reel Daido Reno (4000) 6 Ball Bearings",
+  "price": 140000,
+  "itemType": "Reel",
+  "fileName": "1631848171218.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6145633d0a0d2f3a80cbf3e6"
+  },
+  "name": "Joran Katana Fiber SDA 180cm",
+  "price": 110000,
+  "itemType": "Joran",
+  "fileName": "1631937341340.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61458b240aab120f36ac551e"
+  },
+  "name": "Joran Surf Ruas Pendek Length 240",
+  "price": 70000,
+  "itemType": "Joran",
+  "fileName": "1631947556086.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61458b4e0aab120f36ac5524"
+  },
+  "name": "Joran Surf Ruas Pendek Length 270",
+  "price": 80000,
+  "itemType": "Joran",
+  "fileName": "1631947598271.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61458b630aab120f36ac5526"
+  },
+  "name": "Joran Surf Ruas Pendek Length 300",
+  "price": 85000,
+  "itemType": "Joran",
+  "fileName": "1631947619509.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61458b750aab120f36ac5528"
+  },
+  "name": "Joran Surf Ruas Pendek Length 360",
+  "price": 100000,
+  "itemType": "Joran",
+  "fileName": "1631947637795.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61458b850aab120f36ac552a"
+  },
+  "name": "Joran Surf Ruas Pendek Length 450",
+  "price": 130000,
+  "itemType": "Joran",
+  "fileName": "1631947653515.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61458cb40aab120f36ac553c"
+  },
+  "name": "Sinori 0.50mm",
+  "price": 32000,
+  "itemType": "Nylon",
+  "fileName": "1631947956003.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61458d920aab120f36ac5540"
+  },
+  "name": "Hard Jump Frog",
+  "price": 50000,
+  "itemType": "Lure",
+  "fileName": "1631948178507.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61458db70aab120f36ac5543"
+  },
+  "name": "Soft Frog",
+  "price": 32000,
+  "itemType": "Lure",
+  "fileName": "1631948215044.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61458e5e0aab120f36ac554b"
+  },
+  "name": "Hard Frog Lure",
+  "price": 32000,
+  "itemType": "Lure",
+  "fileName": "1631948382417.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61458fc00aab120f36ac5552"
+  },
+  "name": "Top One 100m",
+  "price": 20000,
+  "itemType": "Nylon",
+  "fileName": "1631948736654.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "614590e40aab120f36ac555f"
+  },
+  "name": "Ghostline Leader",
+  "price": 28000,
+  "itemType": "Nylon",
+  "fileName": "1631949028513.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "614591690aab120f36ac5563"
+  },
+  "name": "Sensor 0.35mm",
+  "price": 32000,
+  "itemType": "Nylon",
+  "fileName": "1631949161880.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "614591d10aab120f36ac556a"
+  },
+  "name": "Box Penyimpan Lure Lure 3 slot",
+  "price": 23000,
+  "itemType": "Lainnya",
+  "fileName": "1631949265046.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "614592850aab120f36ac556d"
+  },
+  "price": 35000,
+  "itemType": "Lure",
+  "fileName": "1631949445551.png",
+  "__v": 0,
+  "name": "Soft Frog Lure"
+},{
+  "_id": {
+    "$oid": "614592950aab120f36ac556f"
+  },
+  "name": "Soft Frog Lure",
+  "price": 32000,
+  "itemType": "Lure",
+  "fileName": "1631949461502.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "614592c50aab120f36ac5572"
+  },
+  "name": "Soft Frog Lure",
+  "price": 27000,
+  "itemType": "Lure",
+  "fileName": "1631949509910.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "614592e80aab120f36ac5574"
+  },
+  "name": "Soft Frog Lure",
+  "price": 27000,
+  "itemType": "Lure",
+  "fileName": "1631949544214.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "614593190aab120f36ac5577"
+  },
+  "name": "Soft Frog Lure",
+  "price": 35000,
+  "itemType": "Lure",
+  "fileName": "1631949593176.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "614593440aab120f36ac557a"
+  },
+  "name": "Reel BC Fugu Taru 17+1 Bearings System Left",
+  "price": 310000,
+  "itemType": "Reel",
+  "fileName": "1631949636735.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "614593b20aab120f36ac557d"
+  },
+  "name": "Reel Kaizen Oishi (4000) 3 Ball Bearings 5.1:1",
+  "price": 150000,
+  "itemType": "Reel",
+  "fileName": "1631949746225.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "614593e90aab120f36ac5580"
+  },
+  "name": "Daido Tsunami (4000) 6 Ball Bearings 4.7:1",
+  "price": 148000,
+  "itemType": "Reel",
+  "fileName": "1631949801246.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "614594240aab120f36ac5583"
+  },
+  "name": "Reel Daido Zodias (2000) 6 Ball Bearings 4.7:1",
+  "price": 125000,
+  "itemType": "Reel",
+  "fileName": "1631949860847.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "614594860aab120f36ac5585"
+  },
+  "name": "Reel Daido Reno (2000) 6 Ball Bearings 4.7:1",
+  "price": 125000,
+  "itemType": "Reel",
+  "fileName": "1631949958128.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6145949a0aab120f36ac5587"
+  },
+  "name": "Reel Kaizen Haruki (2000) 3 Ball Bearings 5.1:1",
+  "price": 145000,
+  "itemType": "Reel",
+  "fileName": "1631949978542.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "614595880aab120f36ac5593"
+  },
+  "name": "Reel Daido Zodias (4000) 6 Ball Bearings 4.7:1",
+  "price": 148000,
+  "itemType": "Reel",
+  "fileName": "1631950216213.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "614595c40aab120f36ac5596"
+  },
+  "name": "Reel Kaizen Gin (4000) 3 Ball Bearings 5.1:1",
+  "price": 180000,
+  "itemType": "Reel",
+  "fileName": "1631950276569.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "614595da0aab120f36ac559a"
+  },
+  "name": "Reel Daido Fino Max (250) 5 Ball Bearings 5.2:1",
+  "price": 75000,
+  "itemType": "Reel",
+  "fileName": "1631950298807.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "614595fa0aab120f36ac559c"
+  },
+  "name": "Reel Kaizen Gin (2000) 3 Ball Bearings 5.1:1",
+  "price": 160000,
+  "itemType": "Reel",
+  "fileName": "1631950330575.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6145983b0aab120f36ac55a3"
+  },
+  "name": "Reel Daido Reno (1000) 3 Ball Bearings 5.1:1",
+  "price": 120000,
+  "itemType": "Reel",
+  "fileName": "1631950907851.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "614f44d3a199a4eaee059b2b"
+  },
+  "name": "Joran BC Daido Tomman 180cm",
+  "price": 250000,
+  "itemType": "Joran",
+  "fileName": "1632584915073.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "614f44f6a199a4eaee059b2d"
+  },
+  "name": "Mata Pancing Kaizen Akitakitsune",
+  "price": 8000,
+  "itemType": "Hook",
+  "fileName": "1632584950878.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "614f4517a199a4eaee059b2f"
+  },
+  "name": "Mata Pancing Kaizen Chinu",
+  "price": 8000,
+  "itemType": "Hook",
+  "fileName": "1632584983046.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "614f46a0a199a4eaee059b34"
+  },
+  "name": "Mata Pancing Carbon Charm 1054 1-13",
+  "price": 7000,
+  "itemType": "Hook",
+  "fileName": "1632585376333.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "614f46c6a199a4eaee059b36"
+  },
+  "name": "Mata Pancing Carbon Plus 1130L 1-13",
+  "price": 7000,
+  "itemType": "Hook",
+  "fileName": "1632585414322.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "614f471ba199a4eaee059b39"
+  },
+  "name": "Mata Pancing Owner Unagi  1 - 20",
+  "price": 28000,
+  "itemType": "Hook",
+  "fileName": "1632585499432.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "614f4752a199a4eaee059b3c"
+  },
+  "name": "Mata Pancing Carbon Mix 1-17",
+  "price": 7000,
+  "itemType": "Hook",
+  "fileName": "1632585554794.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "614f47f8a199a4eaee059b3e"
+  },
+  "name": "Reel Daido Zodias (6000) 6 Ball Bearings 4.7:1",
+  "price": 162000,
+  "itemType": "Reel",
+  "fileName": "1632585720057.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "614fcd93510548922efcc1d2"
+  },
+  "name": "Joran Kaizen Fiber Python 150cm",
+  "price": 100000,
+  "itemType": "Joran",
+  "fileName": "1632619923623.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "614fce8a510548922efcc1d6"
+  },
+  "name": "Daido Fastlock Snap + Kili-Kili 12pcs",
+  "price": 14000,
+  "itemType": "Lainnya",
+  "fileName": "1632620170806.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "614fcf0e510548922efcc1d8"
+  },
+  "name": "Joran Iroly Beset Spin 180cm",
+  "price": 100000,
+  "itemType": "Joran",
+  "fileName": "1632620302393.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "614fd15f510548922efcc1de"
+  },
+  "name": "Pioneer Fastlock Snap HS 12pcs",
+  "price": 10000,
+  "itemType": "Lainnya",
+  "fileName": "1632620895611.png",
+  "__v": 0
+}]
